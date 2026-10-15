@@ -1,0 +1,262 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #F97316;
+  --color-primary-hover: #EA580C;
+  --color-teal: #14B8A6;
+  --color-teal-dark: #0D9488;
+  --color-teal-light: #CCFBF1;
+  --color-secondary: #101C30;
+  --color-navy: #101C30;
+  --color-navy-dark: #0A1220;
+  --color-surface: #FFFFFF;
+  --color-surface-clean: #F8FAFC;
+  --color-neutral-border: #E2E8F0;
+  --color-neutral-text: #64748B;
+  --color-orange: #F97316;
+  --color-orange-hover: #EA580C;
+  --font-heading: 'Montserrat', 'Poppins', 'Outfit', sans-serif;
+  --font-body: 'Inter', 'Plus Jakarta Sans', sans-serif;
+  --radius-card: 16px;
+  --shadow-card-soft: 0 4px 20px -2px rgba(16, 28, 48, 0.08);
+}
+
+@layer base {
+  :root {
+    --font-heading: 'Montserrat', 'Poppins', 'Outfit', sans-serif;
+    --font-body: 'Inter', 'Plus Jakarta Sans', sans-serif;
+
+    /* Pet Town Design Tokens */
+    --color-primary: #F97316;
+    --color-primary-hover: #EA580C;
+    --color-teal: #14B8A6;
+    --color-teal-dark: #0D9488;
+    --color-teal-light: #CCFBF1;
+    --color-secondary: #101C30;
+    --color-navy: #101C30;
+    --color-navy-dark: #0A1220;
+    --color-surface: #FFFFFF;
+    --color-surface-clean: #F8FAFC;
+    --color-neutral-border: #E2E8F0;
+    --color-neutral-text: #64748B;
+
+    /* Compatibility aliases */
+    --color-gold: #F97316;
+    --color-gold-hover: #EA580C;
+    --color-ice: #F8FAFC;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-surface-clean);
+    color: #0F172A;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Animações e Micro-Interações Dinâmicas */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.04); }
+}
+
+@keyframes bounceSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+@keyframes pulseOrange {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.45); }
+  50% { box-shadow: 0 0 0 12px rgba(249, 115, 22, 0); }
+}
+
+@keyframes pulseTeal {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(20, 184, 166, 0.45); }
+  50% { box-shadow: 0 0 0 12px rgba(20, 184, 166, 0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-floatSlow {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-pulseGlow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.animate-bounceSlow {
+  animation: bounceSlow 2s ease-in-out infinite;
+}
+
+.animate-pulseOrange {
+  animation: pulseOrange 2.5s infinite;
+}
+
+.animate-pulseTeal {
+  animation: pulseTeal 2.5s infinite;
+}
+
+/* Transições suaves em cards e botões com sombra de profundidade */
+.interactive-card {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+  box-shadow: 0 4px 20px -2px rgba(16, 28, 48, 0.06);
+}
+
+.interactive-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px -4px rgba(16, 28, 48, 0.12);
+}
+
+/* Ocultar scrollbars mantendo rolagem suave */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Classes temáticas de design tokens */
+.bg-navy-deep,
+.bg-navy {
+  background-color: #101C30;
+}
+
+.bg-navy-dark {
+  background-color: #0A1220;
+}
+
+.bg-brand-primary,
+.bg-brand-orange {
+  background-color: #F97316;
+}
+
+.bg-brand-teal {
+  background-color: #14B8A6;
+}
+
+.text-brand-primary,
+.text-brand-orange {
+  color: #F97316;
+}
+
+.text-brand-teal {
+  color: #0D9488;
+}
+
+.border-brand-primary,
+.border-brand-orange {
+  border-color: #F97316;
+}
+
+.border-brand-teal {
+  border-color: #14B8A6;
+}
+
+/* ==========================================================================
+   SISTEMA DE SCROLL REVEAL (ALTA PERFORMANCE & 60FPS)
+   ========================================================================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-32px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(32px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+/* Estado Ativado quando entra no Viewport */
+.reveal.is-revealed,
+.reveal-left.is-revealed,
+.reveal-right.is-revealed,
+.reveal-scale.is-revealed {
+  opacity: 1;
+  transform: translate(0) scale(1);
+}
+
+/* Delays escalonados para efeito cascata (Stagger) */
+.reveal-delay-100 { transition-delay: 100ms; }
+.reveal-delay-150 { transition-delay: 150ms; }
+.reveal-delay-200 { transition-delay: 200ms; }
+.reveal-delay-250 { transition-delay: 250ms; }
+.reveal-delay-300 { transition-delay: 300ms; }
+.reveal-delay-400 { transition-delay: 400ms; }
+.reveal-delay-500 { transition-delay: 500ms; }
+
+/* Manter o hover em cards revelados */
+.reveal.is-revealed.interactive-card:hover,
+.reveal-scale.is-revealed.interactive-card:hover {
+  transform: translateY(-6px);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+
+/* Acessibilidade: respeita preferência do sistema operacional por movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* Sliders e Carrosséis Mobile Ultra-Sensíveis ao Deslize Lateral */
+.swipe-carousel {
+  touch-action: pan-x pan-y;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  cursor: grab;
+}
+
+.swipe-carousel.is-dragging {
+  cursor: grabbing !important;
+}
+
+.swipe-carousel img {
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+

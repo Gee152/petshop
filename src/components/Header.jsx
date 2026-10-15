@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Menu, X, Calendar, MessageSquare } from 'lucide-react';
 import { PETTOWN_DATA, getWhatsAppUrl } from '../data/propertyData';
 import { slowScrollTo } from '../utils/scrollUtils';
@@ -11,6 +11,9 @@ export default function Header({ onRequestFormModal }) {
   const [isMobileScrolled50, setIsMobileScrolled50] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   const [hasInteracted, setHasInteracted] = useState(false);
+
+  const isNavigatingRef = useRef(false);
+  const navTimeoutRef = useRef(null);
 
   useEffect(() => {
     const handleInteraction = () => {
@@ -37,6 +40,15 @@ export default function Header({ onRequestFormModal }) {
       const mobileTriggerPoint = window.innerHeight * 0.5;
       setIsMobileScrolled50(currentScroll >= mobileTriggerPoint);
 
+      // Se o usuário clicou em um link do menu, não permite que o scroll listener fique alternando o indicador
+      if (isNavigatingRef.current) return;
+
+      const isBottom = window.innerHeight + currentScroll >= document.documentElement.scrollHeight - 60;
+      if (isBottom) {
+        setActiveSection('contato');
+        return;
+      }
+
       const sections = ['home', 'who-we-are', 'services', 'properties', 'depoimentos', 'faq', 'contato'];
       for (const sectionId of sections) {
         const el = document.getElementById(sectionId);
@@ -52,6 +64,7 @@ export default function Header({ onRequestFormModal }) {
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => {
+      if (navTimeoutRef.current) clearTimeout(navTimeoutRef.current);
       window.removeEventListener('mousemove', handleInteraction);
       window.removeEventListener('touchstart', handleInteraction);
       window.removeEventListener('wheel', handleInteraction);
@@ -61,9 +74,18 @@ export default function Header({ onRequestFormModal }) {
 
   const handleNavClick = (e, targetId) => {
     e.preventDefault();
+    const cleanId = targetId.replace('#', '');
     setMobileMenuOpen(false);
-    setActiveSection(targetId.replace('#', ''));
-    slowScrollTo(targetId, 950, 75);
+    setActiveSection(cleanId);
+
+    // Trava o indicador na aba clicada para não pular enquanto o navegador desliza suavemente
+    isNavigatingRef.current = true;
+    if (navTimeoutRef.current) clearTimeout(navTimeoutRef.current);
+    navTimeoutRef.current = setTimeout(() => {
+      isNavigatingRef.current = false;
+    }, 550);
+
+    slowScrollTo(targetId, 400, 80);
   };
 
   const showDesktopHeader = hasInteracted || isScrolled;

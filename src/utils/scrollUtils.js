@@ -1,11 +1,20 @@
 /**
- * Utilitário de rolagem suave e lenta (Slow Smooth Scroll)
- * Utiliza interpolação cúbica (easeInOutCubic) para garantir uma descida
- * cinematográfica, suave e agradável aos olhos do usuário.
+ * Utilitário de rolagem suave (Smooth Scroll ágil e fluido)
+ * Utiliza o smooth scroll nativo com offset de cabeçalho para navegação
+ * instantânea, precisa e sem atrasos ou conflitos de animação.
  */
-export function slowScrollTo(target, duration = 1000, offset = 80) {
-  let targetElement = null;
+export function slowScrollTo(target, duration = 400, offset = 80) {
+  if (typeof window === 'undefined') return;
 
+  if (target === 0 || target === 'top') {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+    return;
+  }
+
+  let targetElement = null;
   if (typeof target === 'string') {
     const selector = target.startsWith('#') ? target : `#${target}`;
     targetElement = document.querySelector(selector);
@@ -13,42 +22,14 @@ export function slowScrollTo(target, duration = 1000, offset = 80) {
     targetElement = target;
   }
 
-  if (!targetElement && target !== 0 && target !== 'top') return;
+  if (!targetElement) return;
 
   const startPosition = window.pageYOffset || document.documentElement.scrollTop;
-  let targetPosition = 0;
+  const elementRect = targetElement.getBoundingClientRect();
+  const targetPosition = Math.max(0, elementRect.top + startPosition - offset);
 
-  if (target === 0 || target === 'top') {
-    targetPosition = 0;
-  } else if (targetElement) {
-    const elementRect = targetElement.getBoundingClientRect();
-    targetPosition = elementRect.top + startPosition - offset;
-  }
-
-  const distance = targetPosition - startPosition;
-  if (Math.abs(distance) < 5) return;
-
-  let startTime = null;
-
-  // Curva de desaceleração gradual suave (easeInOutCubic)
-  function easeInOutCubic(t) {
-    return t < 0.5
-      ? 4 * t * t * t
-      : 1 - Math.pow(-2 * t + 2, 3) / 2;
-  }
-
-  function animation(currentTime) {
-    if (startTime === null) startTime = currentTime;
-    const timeElapsed = currentTime - startTime;
-    const progress = Math.min(timeElapsed / duration, 1);
-    const easeProgress = easeInOutCubic(progress);
-
-    window.scrollTo(0, startPosition + distance * easeProgress);
-
-    if (timeElapsed < duration) {
-      requestAnimationFrame(animation);
-    }
-  }
-
-  requestAnimationFrame(animation);
+  window.scrollTo({
+    top: targetPosition,
+    behavior: 'smooth'
+  });
 }

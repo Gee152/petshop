@@ -14,25 +14,49 @@ const {
 
 const veterinarySchema = {
   "@context": "https://schema.org",
-  "@type": "VeterinaryCare",
+  "@type": ["VeterinaryCare", "PetStore", "LocalBusiness"],
+  "@id": "https://cuidafilhopetshop.com.br/#petshop",
   "name": PETTOWN_DATA.brand.fullName,
   "alternateName": "Cuida Filho Pet Shop",
   "description": PETTOWN_DATA.brand.bio,
   "telephone": "+55-81-99184-1337",
   "priceRange": "$$",
-  "openingHours": "Mo-Fr 08:00-19:00, Sa 08:00-16:00",
+  "openingHours": "Mo-Sa 08:00-20:00, Su 08:00-14:00",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "2800",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Mateus Hiper Casa Forte",
+    "streetAddress": "Av. Dezessete de Agosto, Casa Forte (Mateus Hiper)",
     "addressLocality": "Recife",
     "addressRegion": "PE",
     "addressCountry": "BR"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": -8.0347,
+    "latitude": -8.0315,
     "longitude": -34.9190
-  }
+  },
+  "sameAs": [
+    PETTOWN_DATA.brand.instagram
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": PETTOWN_DATA.faq.items.map((item) => ({
+    "@type": "Question",
+    "name": item.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.answer
+    }
+  }))
 };
 ---
 
@@ -44,19 +68,38 @@ const veterinarySchema = {
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="keywords" content="cuida filho pet shop, pet shop casa forte recife, banho e tosa casa forte, consulta veterinaria mateus hiper, racoes medicamentos recife" />
+    <meta name="keywords" content="cuida filho pet shop, pet shop casa forte recife, banho e tosa casa forte, consulta veterinaria mateus hiper, racoes medicamentos recife, vacinacao pet recife, veterinario zona norte recife" />
     <meta name="author" content="Cuida Filho Pet Shop" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <link rel="canonical" href="https://cuidafilhopetshop.com.br/" />
+
+    <!-- Local SEO Geo-Tags para Casa Forte / Recife - PE -->
+    <meta name="geo.region" content="BR-PE" />
+    <meta name="geo.placename" content="Recife, Casa Forte" />
+    <meta name="geo.position" content="-8.0315;-34.9190" />
+    <meta name="ICBM" content="-8.0315, -34.9190" />
 
     <!-- OpenGraph / Facebook / WhatsApp Preview -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cuidafilhopetshop.com.br/" />
+    <meta property="og:site_name" content="Cuida Filho Pet Shop" />
     <meta property="og:locale" content="pt_BR" />
+    <meta property="og:image" content="https://cuidafilhopetshop.com.br/assets/cuidafilhopetshoplogo.jpg" />
+    <meta property="og:image:alt" content="Cuida Filho Pet Shop • Mateus Hiper Casa Forte" />
 
-    <!-- Schema.org JSON-LD para Google Rich Snippets (VeterinaryCare) -->
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://cuidafilhopetshop.com.br/assets/cuidafilhopetshoplogo.jpg" />
+
+    <!-- Schema.org JSON-LD para Google Rich Snippets (VeterinaryCare + LocalBusiness) -->
     <script type="application/ld+json" set:html={JSON.stringify(veterinarySchema)} />
+
+    <!-- Schema.org JSON-LD para FAQPage (Google SERP Q&A Accordion e AI Citation) -->
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
     <!-- Google Fonts Preconnect & Typography (Fredoka, Baloo 2, Nunito, Quicksand) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

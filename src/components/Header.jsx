@@ -37,7 +37,7 @@ export default function Header({ onRequestFormModal }) {
       const mobileTriggerPoint = window.innerHeight * 0.5;
       setIsMobileScrolled50(currentScroll >= mobileTriggerPoint);
 
-      const sections = ['home', 'who-we-are', 'services', 'properties', 'depoimentos', 'contato'];
+      const sections = ['home', 'who-we-are', 'services', 'properties', 'depoimentos', 'faq', 'contato'];
       for (const sectionId of sections) {
         const el = document.getElementById(sectionId);
         if (el) {
@@ -144,6 +144,16 @@ export default function Header({ onRequestFormModal }) {
           >
             Depoimentos
           </a>
+          <a
+            href="#faq"
+            onClick={(e) => handleNavClick(e, '#faq')}
+            className={`transition-all py-1 relative ${activeSection === 'faq'
+              ? 'text-[#4A2C11] font-bold after:content-[\'\'] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[#FF8C00] after:rounded-full'
+              : 'hover:text-[#FF8C00]'
+              }`}
+          >
+            Dúvidas / FAQ
+          </a>
         </nav>
 
         {/* Right CTA Button Laranja */}
@@ -204,6 +214,13 @@ export default function Header({ onRequestFormModal }) {
             className="block text-sm font-semibold text-[#6B3E2E] hover:text-[#FF8C00] py-2 border-b border-amber-100"
           >
             Depoimentos
+          </a>
+          <a
+            href="#faq"
+            onClick={(e) => handleNavClick(e, '#faq')}
+            className="block text-sm font-semibold text-[#6B3E2E] hover:text-[#FF8C00] py-2 border-b border-amber-100"
+          >
+            Dúvidas / FAQ
           </a>
           <button
             onClick={() => {

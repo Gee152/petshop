@@ -367,7 +367,45 @@ export const PETTOWN_DATA = {
       text: "O carinho que eles têm com a Amora é surreal. Dá pra ver que amam de verdade o que fazem! Produtos de altíssima qualidade, toalha individual selada e o WhatsApp responde super rápido. Recomendo demais!",
       avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
     }
-  ]
+  ],
+
+  // 8. PERGUNTAS FREQUENTES (FAQ) - OTIMIZADO PARA GOOGLE RICH SNIPPETS E GEO (AI SEARCH)
+  faq: {
+    category: "TIRA-DÚVIDAS & INFORMAÇÕES",
+    title: "Perguntas Frequentes sobre o Cuida Filho Pet Shop",
+    subtitle: "Tudo o que você precisa saber sobre nossos cuidados, localização, agendamentos e estrutura no Mateus Hiper Casa Forte.",
+    ctaWhatsappText: "Ainda tem alguma dúvida? Fale com a gente ⤵️",
+    items: [
+      {
+        question: "Onde fica localizado o Cuida Filho Pet Shop?",
+        answer: "Estamos localizados dentro do Mateus Hiper Casa Forte, na Av. Dezessete de Agosto, no bairro de Casa Forte em Recife - PE. Oferecemos fácil acesso e estacionamento amplo, coberto e gratuito para moradores de Casa Forte, Parnamirim, Jaqueira, Poço da Panela, Santana, Monteiro e toda a Zona Norte de Recife."
+      },
+      {
+        question: "Quais serviços são oferecidos no Cuida Filho Pet Shop?",
+        answer: "Oferecemos uma solução completa de cuidados para o seu pet: Banho & Tosa humanizado (tosa higiênica, tosa da raça e na tesoura), Consulta Veterinária preventiva e clínica geral, Vacinação ética importada (V8, V10, Antirrábica e Gripe), além de uma loja completa com rações Super Premium, dermocosméticos, petiscos saudáveis e acessórios."
+      },
+      {
+        question: "Como funciona o agendamento de banho, tosa e consulta?",
+        answer: "O agendamento é rápido e prático diretamente pelo nosso WhatsApp oficial (81 99184-1337). Nossa equipe responde com agilidade, apresentando os horários disponíveis e reservando a vaga ideal para o seu pet ser atendido com toda a pontualidade e tranquilidade, sem filas estressantes."
+      },
+      {
+        question: "Quais são os protocolos de higiene e segurança no Banho & Tosa?",
+        answer: "Tratamos cada pet como um filho. Por isso, utilizamos exclusivamente toalhas 100% esterilizadas e seladas individualmente para cada atendimento, água em temperatura agradável e controlada, secagem suave sem estresse térmico, cosméticos dermatológicos hipoalergênicos e profissionais capacitados em manejo carinhoso e positivo."
+      },
+      {
+        question: "O Cuida Filho Pet Shop atende gatos e possui cuidados específicos para felinos?",
+        answer: "Sim! Cuidamos com muito carinho e respeito dos gatinhos. Temos protocolos adaptados com manejo delicado, ambiente tranquilo e climatizado, sem ruídos excessivos ou estresse, e produtos sem fragrâncias agressivas para garantir a total serenidade do seu felino."
+      },
+      {
+        question: "O local possui estacionamento para clientes?",
+        answer: "Sim! Por estarmos situados dentro do complexo Mateus Hiper Casa Forte, os tutores contam com estacionamento privativo, amplo, coberto, seguro e gratuito, proporcionando total conforto e segurança no embarque e desembarque do seu pet, inclusive em dias de chuva."
+      },
+      {
+        question: "Vocês vendem rações especiais e medicamentos na loja?",
+        answer: "Sim! Dispomos de um catálogo rigorosamente selecionado com as principais marcas de rações Super Premium do mercado, petiscos naturais, suplementos nutricionais, medicamentos veterinários de primeiros socorros, antipulgas, carrapaticidas e produtos de beleza e higiene."
+      }
+    ]
+  }
 };
 
 // Retrocompatibilidade para componentes que importam VISTAHAVEN_DATA

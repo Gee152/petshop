@@ -5,6 +5,7 @@ import WhoWeAreStickyScroll from './components/WhoWeAreStickyScroll';
 import Solutions from './components/Solutions';
 import TrustedLocations from './components/TrustedLocations';
 import SocialProof from './components/SocialProof';
+import FAQSection from './components/FAQSection';
 import QualificationForm from './components/QualificationForm';
 import LogoPetTown from './components/ui/LogoPetTown';
 import SocialDock from './components/ui/SocialDock';
@@ -144,7 +145,10 @@ export default function App() {
       {/* 6. Depoimentos de Tutores e Prova Social */}
       <SocialProof onRequestFormModal={() => setIsModalOpen(true)} />
 
-      {/* 7. Formulário de Qualificação & Agendamento com Amor */}
+      {/* 7. Perguntas Frequentes (FAQ) - Rich Snippets e GEO Search */}
+      <FAQSection onRequestFormModal={() => setIsModalOpen(true)} />
+
+      {/* 8. Formulário de Qualificação & Agendamento com Amor */}
       <section id="contato" className="py-20 px-4 sm:px-6 lg:px-8 bg-[#FFFDF7] relative overflow-hidden border-t border-amber-900/10">
         <div className="max-w-3xl mx-auto space-y-8">
           <div className="text-center max-w-xl mx-auto space-y-3 reveal">

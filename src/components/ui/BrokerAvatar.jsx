@@ -49,17 +49,17 @@ export default function BrokerAvatar({
       {/* Moldura Circular com Borda Degradê Laranja Vibrante & Amarelo-Ouro (#FF8C00 via-#FFB300 to-#6B3E2E) */}
       <div
         className={cn(
-          "rounded-full bg-gradient-to-tr from-[#FF8C00] via-[#FFB300] to-[#6B3E2E] shadow-[0_20px_50px_rgba(74,44,17,0.45),0_0_35px_rgba(255,140,0,0.35)] ring-2 ring-white/40",
+          "rounded-full bg-gradient-to-tr from-[#FF8C00] via-[#FFB300] to-[#6B3E2E] shadow-[0_20px_50px_rgba(74,44,17,0.45),0_0_35px_rgba(255,140,0,0.35)] ring-2 ring-white/30",
           currentSize.avatarClass
         )}
       >
-        <div className="relative w-full h-full rounded-full overflow-hidden bg-white flex items-center justify-center p-2">
-          {/* Logo Cuida Filho Pet Shop */}
+        <div className="relative w-full h-full rounded-full overflow-hidden bg-[#EC8C01] flex items-center justify-center">
+          {/* Logo Cuida Filho Pet Shop - Fundo Laranja Uniforme e Sem Borda Branca */}
           <img
             src={imgSrc}
             alt={alt}
             className={cn(
-              "w-full h-full object-cover transition-transform duration-500 group-hover:scale-110",
+              "w-full h-full object-cover rounded-full transition-transform duration-500 group-hover:scale-105",
               imgClassName
             )}
           />

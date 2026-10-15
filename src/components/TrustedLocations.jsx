@@ -91,7 +91,7 @@ export default function TrustedLocations({ onRequestFormModal }) {
 
           <div
             ref={servicesRef}
-            className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-7 lg:gap-8 overflow-x-auto sm:overflow-x-visible snap-x snap-mandatory pb-5 pt-1 -mx-4 px-4 sm:mx-0 sm:px-0 no-scrollbar touch-pan-x swipe-carousel select-none"
+            className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-7 lg:gap-8 overflow-x-auto sm:overflow-x-visible snap-x snap-mandatory pb-5 pt-1 -mx-4 px-4 sm:mx-0 sm:px-0 no-scrollbar touch-pan-x swipe-carousel select-none items-stretch justify-start sm:justify-center"
           >
             {trustedLocations.properties.map((item, index) => {
               const itemWhatsappUrl = getWhatsAppUrl(item.whatsappMessage);
@@ -100,7 +100,7 @@ export default function TrustedLocations({ onRequestFormModal }) {
               return (
                 <div
                   key={item.id}
-                  className={`w-[85vw] max-w-[340px] shrink-0 snap-center sm:w-auto sm:shrink sm:snap-align-none h-full bg-white border border-amber-900/10 hover:border-[#FF8C00]/60 rounded-3xl p-4 flex flex-col justify-between shadow-md hover:shadow-xl transition-all duration-300 group interactive-card reveal ${delayClass}`}
+                  className={`w-[85vw] max-w-[340px] sm:max-w-none shrink-0 snap-center sm:w-full sm:shrink sm:snap-align-none h-full bg-white border border-amber-900/10 hover:border-[#FF8C00]/60 rounded-3xl p-4 flex flex-col justify-between shadow-md hover:shadow-xl transition-all duration-300 group interactive-card reveal ${delayClass}`}
                 >
                 {/* Image Container with Badges */}
                 <a

@@ -57,12 +57,12 @@ export default function SocialProof({ onRequestFormModal }) {
 
           <div
             ref={testimonialsRef}
-            className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory pb-5 pt-1 -mx-4 px-4 sm:mx-0 sm:px-0 no-scrollbar touch-pan-x swipe-carousel select-none"
+            className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory pb-5 pt-1 -mx-4 px-4 sm:mx-0 sm:px-0 no-scrollbar touch-pan-x swipe-carousel select-none items-stretch justify-start md:justify-center"
           >
             {TESTIMONIALS.map((t, idx) => (
               <div
                 key={idx}
-                className={`w-[85vw] max-w-[340px] shrink-0 snap-center md:w-auto md:shrink md:snap-align-none h-full bg-white hover:bg-[#FFFDF7] border border-amber-900/10 hover:border-[#FF8C00]/50 p-6 sm:p-8 rounded-3xl space-y-4 flex flex-col justify-between hover:shadow-xl transition-all duration-300 interactive-card reveal ${
+                className={`w-[85vw] max-w-[340px] md:max-w-none shrink-0 snap-center md:w-full md:shrink md:snap-align-none h-full bg-white hover:bg-[#FFFDF7] border border-amber-900/10 hover:border-[#FF8C00]/50 p-6 sm:p-8 rounded-3xl space-y-4 flex flex-col justify-between hover:shadow-xl transition-all duration-300 interactive-card reveal ${
                   idx === 0 ? 'reveal-delay-100' : idx === 1 ? 'reveal-delay-200' : 'reveal-delay-300'
                 }`}
               >

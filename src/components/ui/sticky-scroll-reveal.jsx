@@ -27,17 +27,17 @@ export const StickyScroll = ({
   });
 
   const backgroundColors = [
-    "rgb(248 248 248)", // ice-white
-    "rgb(255 255 255)", // white
-    "rgb(243 244 246)", // gray-100
-    "rgb(255 255 255)", // white
+    "#FFFDF7",
+    "#FFFFFF",
+    "#FFFDF7",
+    "#FFFFFF",
   ];
 
   const linearGradients = [
-    "linear-gradient(to bottom right, rgb(16, 28, 48), rgb(10, 18, 32))",
-    "linear-gradient(to bottom right, rgb(242, 140, 15), rgb(222, 125, 9))",
-    "linear-gradient(to bottom right, rgb(16, 28, 48), rgb(30, 41, 59))",
-    "linear-gradient(to bottom right, rgb(111, 195, 75), rgb(22, 163, 74))",
+    "linear-gradient(to bottom right, #4A2C11, #361E0A)",
+    "linear-gradient(to bottom right, #FF8C00, #FFB300)",
+    "linear-gradient(to bottom right, #4A2C11, #6B3E2E)",
+    "linear-gradient(to bottom right, #FFB300, #E67A00)",
   ];
 
   const [backgroundGradient, setBackgroundGradient] = useState(linearGradients[0]);
@@ -54,14 +54,14 @@ export const StickyScroll = ({
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
       className={cn(
-        "w-full border-y border-slate-200/80 transition-colors duration-700 py-8 sm:py-12 lg:py-14 relative overflow-hidden",
+        "w-full border-y border-amber-900/10 transition-colors duration-700 py-8 sm:py-12 lg:py-14 relative overflow-hidden",
         className
       )}
     >
       {/* Header e Métricas Centralizados no Topo */}
       {header && (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 sm:mb-8">
-          <div className="w-full border-b border-slate-200/70 pb-6 sm:pb-8">
+          <div className="w-full border-b border-amber-900/10 pb-6 sm:pb-8">
             {header}
           </div>
         </div>
@@ -70,7 +70,7 @@ export const StickyScroll = ({
       {/* Scroll Container de Largura Total (w-full): Joga a barra de rolagem para a lateral da tela */}
       <div
         ref={ref}
-        className="w-full h-[38rem] sm:h-[42rem] xl:h-[46rem] overflow-y-auto scrollbar-thin scrollbar-thumb-orange-300 hover:scrollbar-thumb-orange-500 pr-1 sm:pr-2"
+        className="w-full h-[38rem] sm:h-[42rem] xl:h-[46rem] overflow-y-auto scrollbar-thin scrollbar-thumb-amber-300 hover:scrollbar-thumb-[#FF8C00] pr-1 sm:pr-2"
       >
         <div className="max-w-[86rem] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row justify-center items-start gap-8 lg:gap-14 xl:gap-16">
           {/* Coluna de Conteúdo/Pilares Centralizada */}
@@ -86,8 +86,8 @@ export const StickyScroll = ({
                     className={cn(
                       "px-3.5 py-1 rounded-full text-[10px] sm:text-xs font-extrabold uppercase tracking-wider transition-all duration-300",
                       activeCard === index
-                        ? "bg-[#F28C0F] text-white shadow-md shadow-[#F28C0F]/20"
-                        : "bg-slate-200/70 text-slate-500"
+                        ? "bg-[#FF8C00] text-white shadow-md shadow-[#FF8C00]/25"
+                        : "bg-amber-100 text-[#6B3E2E]"
                     )}
                   >
                     0{index + 1} • {item.badge || "Pilar Exclusivo"}
@@ -96,16 +96,16 @@ export const StickyScroll = ({
 
                 {/* Título do Pilar */}
                 <motion.h3
-                  initial={{ opacity: 0 }}
+                  initial={false}
                   animate={{
-                    opacity: activeCard === index ? 1 : 0.35,
+                    opacity: activeCard === index ? 1 : 0.5,
                     scale: activeCard === index ? 1.01 : 1,
                     x: activeCard === index ? 0 : -4,
                   }}
                   transition={{ duration: 0.35 }}
                   className={cn(
                     "text-2xl sm:text-3xl lg:text-4xl font-extrabold font-heading tracking-tight transition-colors duration-300",
-                    activeCard === index ? "text-slate-900" : "text-slate-400"
+                    activeCard === index ? "text-[#4A2C11]" : "text-[#4A2C11]/70"
                   )}
                 >
                   {item.title}
@@ -113,18 +113,18 @@ export const StickyScroll = ({
 
                 {/* Descrição */}
                 <motion.p
-                  initial={{ opacity: 0 }}
+                  initial={false}
                   animate={{
-                    opacity: activeCard === index ? 1 : 0.4,
+                    opacity: activeCard === index ? 1 : 0.65,
                   }}
                   transition={{ duration: 0.35 }}
-                  className="text-sm sm:text-base text-slate-600 mt-3 sm:mt-4 leading-relaxed font-normal"
+                  className="text-sm sm:text-base text-[#6B3E2E] mt-3 sm:mt-4 leading-relaxed font-normal"
                 >
                   {item.description}
                 </motion.p>
 
                 {/* Mobile First: Exibição visual ampliada do card inline no celular/tablet */}
-                <div className="block lg:hidden mt-6 rounded-3xl overflow-hidden border border-slate-200/80 shadow-xl h-80 sm:h-[28rem] w-full">
+                <div className="block lg:hidden mt-6 rounded-3xl overflow-hidden border border-amber-900/10 shadow-xl h-80 sm:h-[28rem] w-full">
                   {item.content}
                 </div>
               </div>
@@ -136,7 +136,7 @@ export const StickyScroll = ({
           {/* Desktop Only: Sticky Right Preview Panel Ampliado */}
           <div
             className={cn(
-              "hidden lg:block h-[520px] xl:h-[600px] 2xl:h-[640px] w-[540px] xl:w-[700px] 2xl:w-[760px] rounded-[2.5rem] bg-white sticky top-6 overflow-hidden shadow-2xl border border-slate-200/90 transition-all duration-500 shrink-0",
+              "hidden lg:block h-[520px] xl:h-[600px] 2xl:h-[640px] w-[540px] xl:w-[700px] 2xl:w-[760px] rounded-[2.5rem] bg-white sticky top-6 overflow-hidden shadow-2xl border border-amber-900/10 transition-all duration-500 shrink-0",
               contentClassName
             )}
           >

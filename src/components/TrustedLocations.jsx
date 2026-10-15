@@ -100,7 +100,7 @@ export default function TrustedLocations({ onRequestFormModal }) {
               return (
                 <div
                   key={item.id}
-                  className={`w-[85vw] max-w-[340px] shrink-0 snap-center sm:w-auto sm:shrink sm:snap-align-none bg-white border border-amber-900/10 hover:border-[#FF8C00]/60 rounded-3xl p-4 flex flex-col justify-between shadow-md hover:shadow-xl transition-all duration-300 group interactive-card reveal ${delayClass}`}
+                  className={`w-[85vw] max-w-[340px] shrink-0 snap-center sm:w-auto sm:shrink sm:snap-align-none h-full bg-white border border-amber-900/10 hover:border-[#FF8C00]/60 rounded-3xl p-4 flex flex-col justify-between shadow-md hover:shadow-xl transition-all duration-300 group interactive-card reveal ${delayClass}`}
                 >
                 {/* Image Container with Badges */}
                 <a

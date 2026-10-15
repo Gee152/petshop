@@ -74,8 +74,8 @@ export default function Solutions({ onRequestFormModal }) {
           >
             
             {/* Passo 1: Agendamento */}
-            <div className="w-[84vw] max-w-[320px] shrink-0 snap-center md:w-auto md:shrink md:snap-align-none bg-white hover:bg-[#FFFDF7] border border-amber-900/10 hover:border-[#FF8C00]/50 rounded-3xl p-6 sm:p-8 space-y-4 shadow-sm hover:shadow-xl transition-all duration-300 interactive-card reveal reveal-delay-100 flex flex-col justify-between">
-              <div className="space-y-4">
+            <div className="w-[84vw] max-w-[320px] shrink-0 snap-center md:w-auto md:shrink md:snap-align-none h-full min-h-[300px] bg-white hover:bg-[#FFFDF7] border border-amber-900/10 hover:border-[#FF8C00]/50 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 interactive-card reveal reveal-delay-100 flex flex-col justify-between">
+              <div className="space-y-4 flex-1">
                 <div className="flex items-center justify-between">
                   <div className="w-14 h-14 rounded-2xl bg-[#FFFDF7] border border-amber-200/60 flex items-center justify-center text-[#4A2C11] shadow-sm">
                     <CalendarCheck size={26} className="text-[#FF8C00]" />
@@ -89,15 +89,15 @@ export default function Solutions({ onRequestFormModal }) {
                   {solutions.steps[0].description}
                 </p>
               </div>
-              <div className="pt-2 flex items-center gap-2 text-xs font-bold text-[#4A2C11]">
-                <CheckCircle2 size={14} className="text-[#FF8C00]" />
+              <div className="pt-4 mt-auto border-t border-amber-900/10 flex items-center gap-2 text-xs font-bold text-[#4A2C11]">
+                <CheckCircle2 size={14} className="text-[#FF8C00] shrink-0" />
                 <span>Atendimento direto pelo WhatsApp</span>
               </div>
             </div>
 
             {/* Passo 2: Acolhimento */}
-            <div className="w-[84vw] max-w-[320px] shrink-0 snap-center md:w-auto md:shrink md:snap-align-none bg-white hover:bg-[#FFFDF7] border border-amber-900/10 hover:border-[#FF8C00]/50 rounded-3xl p-6 sm:p-8 space-y-4 shadow-sm hover:shadow-xl transition-all duration-300 interactive-card reveal reveal-delay-200 flex flex-col justify-between">
-              <div className="space-y-4">
+            <div className="w-[84vw] max-w-[320px] shrink-0 snap-center md:w-auto md:shrink md:snap-align-none h-full min-h-[300px] bg-white hover:bg-[#FFFDF7] border border-amber-900/10 hover:border-[#FF8C00]/50 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 interactive-card reveal reveal-delay-200 flex flex-col justify-between">
+              <div className="space-y-4 flex-1">
                 <div className="flex items-center justify-between">
                   <div className="w-14 h-14 rounded-2xl bg-[#FFFDF7] border border-amber-200/60 flex items-center justify-center text-[#4A2C11] shadow-sm">
                     <HeartHandshake size={26} className="text-[#FF8C00]" />
@@ -111,15 +111,15 @@ export default function Solutions({ onRequestFormModal }) {
                   {solutions.steps[1].description}
                 </p>
               </div>
-              <div className="pt-2 flex items-center gap-2 text-xs font-bold text-[#4A2C11]">
-                <CheckCircle2 size={14} className="text-[#FF8C00]" />
+              <div className="pt-4 mt-auto border-t border-amber-900/10 flex items-center gap-2 text-xs font-bold text-[#4A2C11]">
+                <CheckCircle2 size={14} className="text-[#FF8C00] shrink-0" />
                 <span>Avaliação prévia e manejo livre de estresse</span>
               </div>
             </div>
 
             {/* Passo 3: Pet Feliz */}
-            <div className="w-[84vw] max-w-[320px] shrink-0 snap-center md:w-auto md:shrink md:snap-align-none bg-[#4A2C11] text-white border border-[#361E0A] rounded-3xl p-6 sm:p-8 space-y-4 shadow-xl transition-all duration-300 interactive-card reveal reveal-delay-300 flex flex-col justify-between">
-              <div className="space-y-4">
+            <div className="w-[84vw] max-w-[320px] shrink-0 snap-center md:w-auto md:shrink md:snap-align-none h-full min-h-[300px] bg-[#4A2C11] text-white border border-[#361E0A] rounded-3xl p-6 sm:p-8 shadow-xl transition-all duration-300 interactive-card reveal reveal-delay-300 flex flex-col justify-between">
+              <div className="space-y-4 flex-1">
                 <div className="flex items-center justify-between">
                   <div className="w-14 h-14 rounded-2xl bg-[#361E0A] border border-[#FF8C00]/40 flex items-center justify-center text-[#FFB300] shadow-inner">
                     <Sparkles size={26} className="text-[#FFB300]" />
@@ -133,8 +133,8 @@ export default function Solutions({ onRequestFormModal }) {
                   {solutions.steps[2].description}
                 </p>
               </div>
-              <div className="pt-2 flex items-center gap-2 text-xs font-bold text-[#FFB300]">
-                <CheckCircle2 size={14} className="text-[#FF8C00]" />
+              <div className="pt-4 mt-auto border-t border-white/10 flex items-center gap-2 text-xs font-bold text-[#FFB300]">
+                <CheckCircle2 size={14} className="text-[#FF8C00] shrink-0" />
                 <span>Mais de 2.800 pets cuidados como filhos</span>
               </div>
             </div>
@@ -176,29 +176,34 @@ export default function Solutions({ onRequestFormModal }) {
             className="flex lg:grid lg:grid-cols-12 gap-5 lg:gap-8 items-stretch overflow-x-auto lg:overflow-x-visible snap-x snap-mandatory pb-5 pt-1 -mx-4 px-4 sm:mx-0 sm:px-0 no-scrollbar touch-pan-x swipe-carousel select-none"
           >
             {/* Card 1: Foto Real de Banho & Tosa */}
-            <div className="w-[85vw] max-w-[340px] shrink-0 snap-center lg:w-auto lg:shrink lg:snap-align-none lg:col-span-5 relative rounded-3xl overflow-hidden shadow-xl min-h-[380px] group border border-amber-900/10 interactive-card reveal reveal-delay-100">
+            <div className="w-[85vw] max-w-[340px] shrink-0 snap-center lg:w-auto lg:shrink lg:snap-align-none lg:col-span-5 relative rounded-3xl overflow-hidden shadow-xl h-[440px] sm:h-[460px] lg:h-[480px] group border border-amber-900/10 interactive-card reveal reveal-delay-100 flex flex-col justify-between">
               <img
                 src={solutions.cards.card1.image}
                 alt={solutions.cards.card1.alt}
-                className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#4A2C11]/90 via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#4A2C11]/95 via-[#4A2C11]/30 to-transparent"></div>
               
               {/* Top Badge */}
-              <div className="absolute top-5 left-5">
+              <div className="relative z-10 p-5 sm:p-6">
                 <span className="bg-[#FF8C00] text-white font-extrabold text-xs px-4 py-1.5 rounded-full shadow-md">
                   {solutions.cards.card1.badge}
                 </span>
               </div>
 
-              <div className="absolute bottom-5 left-5 right-5 text-white">
-                <h4 className="text-lg font-bold">Banho & Tosa com Amor</h4>
-                <p className="text-xs text-amber-100/90">Produtos dermatológicos e água na temperatura ideal.</p>
+              {/* Bottom Text */}
+              <div className="relative z-10 p-5 sm:p-7 text-white space-y-1">
+                <h4 className="text-xl sm:text-2xl font-black font-heading leading-tight drop-shadow-md">
+                  Banho & Tosa com Amor
+                </h4>
+                <p className="text-xs sm:text-sm text-amber-100/90 leading-relaxed drop-shadow-sm">
+                  Produtos dermatológicos e água na temperatura ideal com toalhas individuais esterilizadas.
+                </p>
               </div>
             </div>
 
             {/* Card 2: Box Informativo de Especialidade e Produtos */}
-            <div className="w-[85vw] max-w-[340px] shrink-0 snap-center lg:w-auto lg:shrink lg:snap-align-none lg:col-span-4 bg-white border border-amber-900/10 rounded-3xl p-6 sm:p-8 flex flex-col justify-between space-y-6 shadow-sm interactive-card reveal reveal-delay-200">
+            <div className="w-[85vw] max-w-[340px] shrink-0 snap-center lg:w-auto lg:shrink lg:snap-align-none lg:col-span-4 bg-white border border-amber-900/10 rounded-3xl p-6 sm:p-8 h-[440px] sm:h-[460px] lg:h-[480px] flex flex-col justify-between shadow-sm interactive-card reveal reveal-delay-200">
               <div className="space-y-4">
                 <div className="w-12 h-12 rounded-2xl bg-[#4A2C11] text-[#FFB300] flex items-center justify-center">
                   <Sparkles size={24} />
@@ -211,7 +216,7 @@ export default function Solutions({ onRequestFormModal }) {
                 </p>
               </div>
 
-              <div>
+              <div className="pt-4">
                 <button
                   onClick={onRequestFormModal}
                   className="w-full bg-[#FF8C00] hover:bg-[#E67E00] text-white font-extrabold text-xs py-3.5 px-5 rounded-full transition-all cursor-pointer shadow-md active:scale-95 flex items-center justify-center gap-2"
@@ -223,18 +228,18 @@ export default function Solutions({ onRequestFormModal }) {
             </div>
 
             {/* Card 3: Foto de Atendimento Clínico */}
-            <div className="w-[85vw] max-w-[340px] shrink-0 snap-center lg:w-auto lg:shrink lg:snap-align-none lg:col-span-3 bg-white border border-amber-900/10 rounded-3xl p-5 flex flex-col justify-between space-y-4 shadow-xl interactive-card reveal reveal-delay-300">
-              <div className="relative rounded-2xl overflow-hidden h-52 group">
+            <div className="w-[85vw] max-w-[340px] shrink-0 snap-center lg:w-auto lg:shrink lg:snap-align-none lg:col-span-3 bg-white border border-amber-900/10 rounded-3xl p-5 sm:p-6 h-[440px] sm:h-[460px] lg:h-[480px] flex flex-col justify-between shadow-xl interactive-card reveal reveal-delay-300">
+              <div className="relative rounded-2xl overflow-hidden h-52 sm:h-56 group shrink-0">
                 <img
                   src={solutions.cards.card3.image}
                   alt={solutions.cards.card3.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
                 />
-                <div className="absolute inset-0 bg-[#4A2C11]/20"></div>
+                <div className="absolute inset-0 bg-[#4A2C11]/15"></div>
               </div>
 
-              <div className="space-y-1">
-                <h3 className="text-base font-bold text-[#4A2C11] font-heading">
+              <div className="space-y-1 py-1">
+                <h3 className="text-base sm:text-lg font-bold text-[#4A2C11] font-heading leading-snug">
                   {solutions.cards.card3.title}
                 </h3>
                 <p className="text-xs text-[#6B3E2E] font-medium">
@@ -242,15 +247,17 @@ export default function Solutions({ onRequestFormModal }) {
                 </p>
               </div>
 
-              <a
-                href={consultancyWhatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full bg-[#4A2C11] hover:bg-[#361E0A] text-white font-bold py-3 px-4 rounded-full text-xs transition-all flex items-center justify-center gap-2 cursor-pointer active:scale-95 group"
-              >
-                <span>{solutions.cards.card3.buttonText}</span>
-                <ArrowRight size={14} className="text-[#FF8C00] group-hover:translate-x-1 transition-transform" />
-              </a>
+              <div className="pt-2">
+                <a
+                  href={consultancyWhatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-[#4A2C11] hover:bg-[#361E0A] text-white font-bold py-3.5 px-4 rounded-full text-xs transition-all flex items-center justify-center gap-2 cursor-pointer active:scale-95 group shadow-sm"
+                >
+                  <span>{solutions.cards.card3.buttonText}</span>
+                  <ArrowRight size={14} className="text-[#FF8C00] group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
             </div>
 
           </div>

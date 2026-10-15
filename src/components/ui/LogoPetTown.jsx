@@ -1,12 +1,12 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import logoImg from '@/img/logo_pet_town.png';
+import logoImg from '@/img/cuidafilhopetshoplogo.jpg';
 import { PETTOWN_DATA } from '@/data/propertyData';
 import { getImgSrc } from '@/utils/imageUtils';
 
 /**
- * LogoPetTown - Identidade visual oficial da Pet Town
- * Usa a marca com a tipografia estilizada (cão e gato nas letras) e pata turquesa.
+ * LogoPetTown / LogoCuidaFilho - Identidade visual oficial Cuida Filho Pet Shop
+ * Mateus Hiper Casa Forte
  */
 export default function LogoPetTown({
   className = "",
@@ -49,19 +49,19 @@ export default function LogoPetTown({
         className
       )}
     >
-      {/* Imagem do Logo Circular Original */}
+      {/* Imagem do Logo Circular Oficial */}
       <div className="relative shrink-0">
         <img
           src={imgSrc}
-          alt="Pet Town - Pet Shop e Clínica Veterinária"
+          alt="Cuida Filho - Pet Shop"
           className={cn(
-            "rounded-full object-contain shadow-md transition-transform duration-300 group-hover:rotate-6",
+            "rounded-full object-cover shadow-md transition-transform duration-300 group-hover:rotate-6",
             currentSize.imgClass,
-            isDarkBg ? "ring-2 ring-white/30" : "ring-2 ring-[#F97316]/30"
+            isDarkBg ? "ring-2 ring-white/30" : "ring-2 ring-[#FF8C00]/40"
           )}
         />
         {/* Ponto indicador de status ativo */}
-        <span className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-[#14B8A6] border-2 border-white animate-pulse" />
+        <span className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-[#FF8C00] border-2 border-white animate-pulse" />
       </div>
 
       {/* Bloco de Texto da Marca */}
@@ -71,13 +71,13 @@ export default function LogoPetTown({
             className={cn(
               "font-heading font-black tracking-tight",
               currentSize.titleClass,
-              isDarkBg ? "text-white" : "text-[#101C30]"
+              isDarkBg ? "text-white" : "text-[#4A2C11]"
             )}
           >
-            Pet <span className="text-[#F97316]">Town</span>
+            Cuida <span className="text-[#FF8C00]">Filho</span>
           </span>
-          <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-md bg-[#14B8A6]/20 text-[#0D9488] uppercase tracking-wider hidden sm:inline-block">
-            Clínica & Pet Shop
+          <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-md bg-[#FF8C00]/15 text-[#FF8C00] uppercase tracking-wider hidden sm:inline-block">
+            Pet Shop
           </span>
         </div>
 
@@ -86,7 +86,7 @@ export default function LogoPetTown({
             className={cn(
               "font-medium italic tracking-wide mt-0.5 whitespace-nowrap",
               currentSize.sloganClass,
-              isDarkBg ? "text-slate-300" : "text-slate-500"
+              isDarkBg ? "text-amber-100/80" : "text-[#6B3E2E]/80"
             )}
           >
             {PETTOWN_DATA.brand.slogan}
@@ -96,3 +96,4 @@ export default function LogoPetTown({
     </div>
   );
 }
+

@@ -25,21 +25,21 @@ export default function TrustedLocations({ onRequestFormModal }) {
   const bannerWhatsappUrl = getWhatsAppUrl(trustedLocations.bannerWhatsappMessage);
 
   return (
-    <section id="properties" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-[#F8FAFC] border-b border-slate-200/80">
+    <section id="properties" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-[#FFFDF7] border-b border-amber-900/10">
       <div className="max-w-7xl mx-auto space-y-10 sm:space-y-12">
 
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-slate-200/80 pb-8 reveal">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-amber-900/10 pb-8 reveal">
           <div className="space-y-2 max-w-2xl">
-            <div className="inline-flex items-center gap-1.5 bg-[#F97316]/10 text-[#F97316] text-xs font-black uppercase tracking-[0.2em] px-3 py-1 rounded-full font-heading">
+            <div className="inline-flex items-center gap-1.5 bg-[#FF8C00]/10 text-[#FF8C00] text-xs font-black uppercase tracking-[0.2em] px-3 py-1 rounded-full font-heading">
               <Sparkles size={13} className="shrink-0" />
               <span>{trustedLocations.category}</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#101C30] font-heading tracking-tight leading-tight">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#4A2C11] font-heading tracking-tight leading-tight">
               {trustedLocations.title}
             </h2>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Banho & Tosa 360°, Consultas Clínicas com a Dra. Aline Belo, Acupuntura, Fisioterapia, Pet Delivery e Farmácia Completa. Atendimento com hora marcada e total carinho.
+            <p className="text-xs sm:text-sm text-[#6B3E2E] leading-relaxed">
+              Banho, tosa humanizada e consulta veterinária com carinho de família, além de linha completa de produtos de saúde, beleza e alimentação no Mateus Hiper Casa Forte.
             </p>
           </div>
 
@@ -60,19 +60,19 @@ export default function TrustedLocations({ onRequestFormModal }) {
         {/* 6-Item Services Grid: Slider horizontal com snap no mobile, grid 2/3 colunas no desktop */}
         <div className="space-y-3">
           {/* Indicador de Deslize sutil com navegação visível apenas no Mobile */}
-          <div className="sm:hidden flex items-center justify-between px-1 text-xs text-slate-500">
-            <span className="flex items-center gap-1.5 text-[#F97316] font-bold">
+          <div className="sm:hidden flex items-center justify-between px-1 text-xs text-[#6B3E2E]">
+            <span className="flex items-center gap-1.5 text-[#FF8C00] font-bold">
               <span>👉 Deslize para ver os serviços</span>
             </span>
             <div className="flex items-center gap-1.5">
-              <span className="text-[10px] font-extrabold bg-[#F97316]/10 text-[#F97316] px-2 py-0.5 rounded-full uppercase tracking-wider mr-1">
+              <span className="text-[10px] font-extrabold bg-[#FF8C00]/10 text-[#FF8C00] px-2 py-0.5 rounded-full uppercase tracking-wider mr-1">
                 6 Serviços
               </span>
               <button
                 type="button"
                 data-nav-arrow="true"
                 onClick={() => scrollServices(-1)}
-                className="w-7 h-7 rounded-full bg-white hover:bg-[#F97316] hover:text-white text-slate-700 flex items-center justify-center transition-all cursor-pointer active:scale-95 shadow-sm border border-slate-200"
+                className="w-7 h-7 rounded-full bg-white hover:bg-[#FF8C00] hover:text-white text-[#4A2C11] flex items-center justify-center transition-all cursor-pointer active:scale-95 shadow-sm border border-amber-200"
                 aria-label="Serviço anterior"
               >
                 <ChevronLeft size={16} />
@@ -81,7 +81,7 @@ export default function TrustedLocations({ onRequestFormModal }) {
                 type="button"
                 data-nav-arrow="true"
                 onClick={() => scrollServices(1)}
-                className="w-7 h-7 rounded-full bg-white hover:bg-[#F97316] hover:text-white text-slate-700 flex items-center justify-center transition-all cursor-pointer active:scale-95 shadow-sm border border-slate-200"
+                className="w-7 h-7 rounded-full bg-white hover:bg-[#FF8C00] hover:text-white text-[#4A2C11] flex items-center justify-center transition-all cursor-pointer active:scale-95 shadow-sm border border-amber-200"
                 aria-label="Próximo serviço"
               >
                 <ChevronRight size={16} />
@@ -100,14 +100,14 @@ export default function TrustedLocations({ onRequestFormModal }) {
               return (
                 <div
                   key={item.id}
-                  className={`w-[85vw] max-w-[340px] shrink-0 snap-center sm:w-auto sm:shrink sm:snap-align-none bg-white border border-slate-200/90 hover:border-[#F97316]/60 rounded-3xl p-4 flex flex-col justify-between shadow-md hover:shadow-xl transition-all duration-300 group interactive-card reveal ${delayClass}`}
+                  className={`w-[85vw] max-w-[340px] shrink-0 snap-center sm:w-auto sm:shrink sm:snap-align-none bg-white border border-amber-900/10 hover:border-[#FF8C00]/60 rounded-3xl p-4 flex flex-col justify-between shadow-md hover:shadow-xl transition-all duration-300 group interactive-card reveal ${delayClass}`}
                 >
                 {/* Image Container with Badges */}
                 <a
                   href={itemWhatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block relative rounded-2xl overflow-hidden h-52 bg-slate-100 cursor-pointer"
+                  className="block relative rounded-2xl overflow-hidden h-52 bg-amber-50 cursor-pointer"
                   title={`Quero mais informações sobre ${item.name}`}
                 >
                   <img
@@ -119,14 +119,14 @@ export default function TrustedLocations({ onRequestFormModal }) {
 
                   {/* Top-Left Badge: SubType / Categoria */}
                   <div className="absolute top-3 left-3">
-                    <span className="bg-[#101C30]/90 backdrop-blur-sm text-[#F97316] text-[10px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm border border-[#F97316]/30">
+                    <span className="bg-[#4A2C11]/90 backdrop-blur-sm text-[#FFB300] text-[10px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm border border-[#FF8C00]/30">
                       {item.subType}
                     </span>
                   </div>
 
                   {/* Top-Right Badge: Feito com Amor */}
                   <div className="absolute top-3 right-3">
-                    <span className="bg-[#14B8A6] text-white text-[10px] font-black px-2.5 py-1 rounded-full uppercase shadow-md flex items-center gap-1">
+                    <span className="bg-[#FF8C00] text-white text-[10px] font-black px-2.5 py-1 rounded-full uppercase shadow-md flex items-center gap-1">
                       <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
                       Com Amor
                     </span>
@@ -135,7 +135,7 @@ export default function TrustedLocations({ onRequestFormModal }) {
                   {/* Bottom Pill over image */}
                   <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
                     <span className="inline-flex items-center gap-1 text-[11px] font-bold text-white bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-full">
-                      <Heart size={11} className="text-[#F97316] fill-[#F97316]" />
+                      <Heart size={11} className="text-[#FF8C00] fill-[#FF8C00]" />
                       <span className="truncate">{item.neighborhood}</span>
                     </span>
                     <span className="text-[11px] font-semibold text-white/95 bg-black/50 backdrop-blur-md px-2 py-0.5 rounded-full">
@@ -147,7 +147,7 @@ export default function TrustedLocations({ onRequestFormModal }) {
                 {/* Card Body Details */}
                 <div className="pt-4 flex-1 flex flex-col justify-between space-y-3">
                   <div>
-                    <h3 className="text-lg font-extrabold text-[#101C30] font-heading group-hover:text-[#F97316] transition-colors leading-snug">
+                    <h3 className="text-lg font-extrabold text-[#4A2C11] font-heading group-hover:text-[#FF8C00] transition-colors leading-snug">
                       <a
                         href={itemWhatsappUrl}
                         target="_blank"
@@ -159,7 +159,7 @@ export default function TrustedLocations({ onRequestFormModal }) {
                       </a>
                     </h3>
 
-                    <p className="text-xs text-slate-500 font-medium mt-1 line-clamp-2">
+                    <p className="text-xs text-[#6B3E2E] font-medium mt-1 line-clamp-2">
                       {item.description}
                     </p>
 
@@ -167,8 +167,8 @@ export default function TrustedLocations({ onRequestFormModal }) {
                     {item.amenities && item.amenities.length > 0 && (
                       <ul className="mt-3 space-y-1">
                         {item.amenities.slice(0, 2).map((amenity, idx) => (
-                          <li key={idx} className="flex items-center gap-1.5 text-xs text-slate-600 font-medium">
-                            <Check size={12} className="text-[#14B8A6] shrink-0 stroke-[2.5]" />
+                          <li key={idx} className="flex items-center gap-1.5 text-xs text-[#6B3E2E] font-medium">
+                            <Check size={12} className="text-[#FF8C00] shrink-0 stroke-[2.5]" />
                             <span className="truncate">{amenity}</span>
                           </li>
                         ))}
@@ -177,15 +177,15 @@ export default function TrustedLocations({ onRequestFormModal }) {
                   </div>
 
                   {/* Conditions & Direct WhatsApp CTA */}
-                  <div className="pt-3 border-t border-slate-100 space-y-3">
+                  <div className="pt-3 border-t border-amber-100 space-y-3">
                     <div className="flex items-center justify-between">
                       <div>
-                        <span className="text-[10px] text-slate-400 block leading-none font-medium">Condição / Valor</span>
-                        <span className="text-sm font-black text-[#101C30] font-heading">
+                        <span className="text-[10px] text-amber-900/60 block leading-none font-medium">Condição / Valor</span>
+                        <span className="text-sm font-black text-[#4A2C11] font-heading">
                           {item.priceFormatted}
                         </span>
                       </div>
-                      <span className="text-[10px] text-[#0D9488] font-bold uppercase bg-[#CCFBF1] px-2.5 py-1 rounded-full border border-[#14B8A6]/30">
+                      <span className="text-[10px] text-[#FF8C00] font-bold uppercase bg-[#FF8C00]/10 px-2.5 py-1 rounded-full border border-[#FF8C00]/30">
                         Atendimento Ativo
                       </span>
                     </div>
@@ -199,7 +199,7 @@ export default function TrustedLocations({ onRequestFormModal }) {
                       title={`Quero agendar ${item.name}`}
                     >
                       <WhatsAppIcon className="w-4 h-4 shrink-0 fill-current" />
-                      <span>Agendar no WhatsApp</span>
+                      <span>Fale com a gente ⤵️</span>
                       <ExternalLink size={13} className="shrink-0 opacity-80 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
                     </a>
 
@@ -208,7 +208,7 @@ export default function TrustedLocations({ onRequestFormModal }) {
                       <button
                         type="button"
                         onClick={onRequestFormModal}
-                        className="w-full text-center text-[11px] font-bold text-slate-500 hover:text-[#F97316] transition-colors py-1 cursor-pointer flex items-center justify-center gap-1"
+                        className="w-full text-center text-[11px] font-bold text-[#6B3E2E] hover:text-[#FF8C00] transition-colors py-1 cursor-pointer flex items-center justify-center gap-1"
                       >
                         <span>Ou envie seus dados pelo formulário online</span>
                         <ArrowRight size={11} />
@@ -224,16 +224,16 @@ export default function TrustedLocations({ onRequestFormModal }) {
         </div>
 
         {/* Bottom Banner with Fast Assistance */}
-        <div className="bg-gradient-to-r from-[#101C30] to-[#162540] rounded-3xl p-6 sm:p-8 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl border border-slate-700/50 reveal-scale">
+        <div className="bg-gradient-to-r from-[#4A2C11] to-[#361E0A] rounded-3xl p-6 sm:p-8 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl border border-[#FF8C00]/20 reveal-scale">
           <div className="space-y-1.5 text-center md:text-left">
-            <span className="text-[10px] uppercase font-extrabold tracking-widest text-[#F97316] block">
+            <span className="text-[10px] uppercase font-extrabold tracking-widest text-[#FFB300] block">
               ATENDIMENTO COM CARINHO & DEDICAÇÃO
             </span>
             <h3 className="text-xl sm:text-2xl font-black font-heading text-white">
-              Precisa de Táxi Dog ou quer agendar uma consulta com a Dra. Aline Belo?
+              Dúvidas sobre banho, tosa ou consulta no Mateus Hiper Casa Forte?
             </h3>
-            <p className="text-xs sm:text-sm text-slate-300 max-w-xl">
-              Fale direto com a equipe da Pet Town no WhatsApp. Respondemos rápido para tirar dúvidas e agendar o melhor dia para seu pet!
+            <p className="text-xs sm:text-sm text-amber-100/80 max-w-xl">
+              Fale direto com a equipe do Cuida Filho Pet Shop no WhatsApp. Respondemos rápido para tirar dúvidas e agendar o melhor dia para seu filho!
             </p>
           </div>
 
@@ -244,7 +244,7 @@ export default function TrustedLocations({ onRequestFormModal }) {
             className="bg-[#25D366] hover:bg-[#20ba59] text-white font-black text-xs sm:text-sm px-6 py-3.5 rounded-full transition-all flex items-center gap-2 cursor-pointer shadow-lg active:scale-95 shrink-0"
           >
             <WhatsAppIcon className="w-4 h-4 shrink-0 fill-current" />
-            <span>Falar com Atendimento no WhatsApp</span>
+            <span>Fale com a gente ⤵️</span>
             <ExternalLink size={14} className="shrink-0" />
           </a>
         </div>

@@ -1,15 +1,16 @@
-// Pet Town - Pet Shop e Clínica Veterinária
-// Dados Oficiais e Conteúdos em Português conforme PRD e Identidade Visual
+// Cuida Filho - Pet Shop
+// Dados Oficiais e Conteúdos em Português conforme PRD e Identidade Visual Cuida Filho
+// Mateus Hiper Casa Forte • Recife - PE
 
-import rawLogoPetTown from "../img/logo_pet_town.png";
-import rawDestaquesServicos from "../img/destaques_servicos.png";
-import rawBanhoTosaHero from "../img/banho_tosa_hero.jpg";
-import rawClinicaVet from "../img/clinica_veterinaria.png";
-import rawAlineBeloAcupuntura from "../img/aline_belo_acupuntura.png";
-import rawDaycareHotelzinho from "../img/daycare_hotelzinho.jpg";
-import rawPetDelivery from "../img/pet_delivery.jpg";
-import rawPetShopFarmacia from "../img/pet_shop_farmacia.jpg";
-import rawPetTownStorefront from "../img/image.png";
+import rawLogoPetTown from "../img/cuidafilhopetshoplogo.jpg";
+import rawDestaquesServicos from "../img/produto1.png";
+import rawBanhoTosaHero from "../img/cao.png";
+import rawClinicaVet from "../img/gato.png";
+import rawAlineBeloAcupuntura from "../img/cuidandodopet.png";
+import rawDaycareHotelzinho from "../img/cao2.png";
+import rawPetDelivery from "../img/gato2.png";
+import rawPetShopFarmacia from "../img/produto1.png";
+import rawPetTownStorefront from "../img/cuidandodopet.png";
 import { getImgSrc } from "../utils/imageUtils";
 
 const logoPetTown = getImgSrc(rawLogoPetTown);
@@ -25,144 +26,144 @@ const petTownStorefront = getImgSrc(rawPetTownStorefront);
 export const PETTOWN_DATA = {
   // 1. DADOS DA MARCA E PROFISSIONAIS
   brand: {
-    name: "Pet Town",
-    brokerName: "Pet Town",
-    fullName: "Pet Town • Pet Shop e Clínica Veterinária",
-    creci: "CRMV Responsável Ativo",
-    specialistName: "Dra. Aline Belo",
-    specialistCredentials: "Médica Veterinária (UNINASSAU) • Pós em Acupuntura • Fisioterapia Veterinária",
+    name: "Cuida Filho Pet Shop",
+    brokerName: "Cuida Filho",
+    fullName: "Cuida Filho • Pet Shop",
+    creci: "Atendimento com Amor 🧡",
+    specialistName: "Equipe Cuida Filho",
+    specialistCredentials: "Banho, tosa e consulta veterinária • Produtos de saúde, beleza e alimentação",
     photo: logoPetTown,
-    photoAlt: "Pet Town - Pet Shop e Clínica Veterinária",
+    photoAlt: "Cuida Filho - Pet Shop no Mateus Hiper Casa Forte",
     storefrontPhoto: petTownStorefront,
     bioPhoto: petTownStorefront,
     specialistPhoto: alineBeloAcupuntura,
     bannerBanhoTosa: banhoTosaHero,
     bannerClinica: clinicaVet,
     destaquesImg: destaquesServicos,
-    slogan: "Feito por quem cuida com amor!",
-    partner: "Clínica Veterinária Especializada",
-    company: "Pet Town Veterinária",
-    tagline: "PET SHOP & CLÍNICA VETERINÁRIA",
-    subtagline: "CUIDADO E BELEZA 360°",
-    logoText: "Pet Town",
-    location: "Recife e Região Metropolitana - PE",
-    address: "Atendimento Clínico, Banho & Tosa e Pet Delivery",
-    fullAddress: "Recife e Região Metropolitana, PE, Brasil",
-    mapsUrl: "https://maps.google.com/?q=Pet+Town+Pet+Shop+Clinica+Veterinaria",
-    coverageAreas: "Recife, Olinda, Jaboatão, Paulista e Região",
-    specialty: "Clínica Veterinária, Acupuntura, Fisioterapia, Banho & Tosa e Delivery",
-    ctaSchedule: "Agendar Horário do Pet",
-    services: "Clínica Geral | Acupuntura & Fisioterapia | Banho & Tosa 360° | Pet Delivery | Farmácia Pet",
-    bio: "Cuidado e Beleza 360° para o seu pet! Feito por quem cuida com amor. Clínica veterinária com Dra. Aline Belo, centro de estética animal, farmácia completa e serviço leva e traz.",
-    openingHours: "Seg a Sex: 08h às 18h | Sáb: 08h às 14h",
-    instagram: "https://www.instagram.com/pettown.petshop/",
-    instagramPartner: "https://www.instagram.com/pettown.petshop/",
-    whatsappPhone: "5581999999999",
-    whatsapp: "https://api.whatsapp.com/send?phone=5581999999999",
+    slogan: "Feito por quem cuida do seu filho com amor! 🧡",
+    partner: "Mateus Hiper Casa Forte",
+    company: "Cuida Filho Pet Shop",
+    tagline: "PET SHOP • CUIDA FILHO",
+    subtagline: "BANHO, TOSA E CONSULTA VETERINÁRIA",
+    logoText: "Cuida Filho",
+    location: "Mateus Hiper Casa Forte • Recife - PE",
+    address: "Av. Dezessete de Agosto, Casa Forte (Dentro do Mateus Hiper)",
+    fullAddress: "Mateus Hiper Casa Forte, Av. Dezessete de Agosto, Casa Forte, Recife - PE, Brasil",
+    mapsUrl: "https://maps.google.com/?q=Mateus+Hiper+Casa+Forte+Recife",
+    coverageAreas: "Casa Forte, Parnamirim, Jaqueira, Poço da Panela e Região",
+    specialty: "Banho, Tosa, Consulta Veterinária e Produtos de Saúde, Beleza e Alimentação",
+    ctaSchedule: "Falar com a Gente no WhatsApp",
+    services: "Banho & Tosa | Consulta Veterinária | Saúde & Beleza | Alimentação Pet",
+    bio: "Pet Shop no Mateus Hiper Casa Forte. Banho, tosa e consulta veterinária com carinho de verdade, além de produtos selecionados de saúde, beleza e alimentação para seu filho de quatro patas.",
+    openingHours: "Seg a Sáb: 08h às 20h | Dom: 08h às 14h",
+    instagram: "https://www.instagram.com/cuidafilhopetshop/",
+    instagramPartner: "https://www.instagram.com/cuidafilhopetshop/",
+    whatsappPhone: "5581991841337",
+    whatsapp: "https://api.whatsapp.com/send?phone=5581991841337",
     // Mensagens automáticas para cada ponto de contato
-    whatsappSimulationMessage: "Olá Pet Town! Gostaria de agendar um atendimento para o meu pet (Banho & Tosa / Consulta Veterinária).",
-    whatsappReferralMessage: "Olá Pet Town! Vim pelo site e gostaria de saber mais sobre o programa de indicação e benefícios!",
-    whatsappScheduleMessage: "Olá Pet Town! Vim pelo site e gostaria de agendar um horário com todo amor para o meu pet!",
-    whatsappConsultancyMessage: "Olá equipe Pet Town! Gostaria de informações sobre consultas especializadas com a Dra. Aline Belo (Acupuntura e Fisioterapia).",
-    whatsappGeneralMessage: "Olá Pet Town! Vim pelo site e gostaria de tirar dúvidas sobre os serviços para o meu pet!"
+    whatsappSimulationMessage: "Olá Cuida Filho Pet Shop! Gostaria de agendar um atendimento para o meu pet (Banho & Tosa / Consulta Veterinária).",
+    whatsappReferralMessage: "Olá Cuida Filho Pet Shop! Vim pelo site e gostaria de saber mais sobre os produtos e serviços para o meu pet!",
+    whatsappScheduleMessage: "Olá Cuida Filho Pet Shop! Vim pelo site e gostaria de agendar um horário com todo carinho para o meu pet!",
+    whatsappConsultancyMessage: "Olá equipe Cuida Filho! Gostaria de informações sobre consultas veterinárias e banho & tosa no Mateus Hiper Casa Forte.",
+    whatsappGeneralMessage: "Olá Cuida Filho Pet Shop! Vim pelo site e gostaria de tirar dúvidas sobre os cuidados para o meu pet!"
   },
 
   // 2. CONTEÚDO DO HERO (TELA PRINCIPAL)
   hero: {
-    badge: "Feito por quem cuida com amor! • Cuidado e Beleza 360°",
-    headlineLine1: "Cuidado e Beleza 360° para o Seu Pet com",
-    headlineHighlight: "Amor e Dedicação",
-    headlineLine2: "em Cada Detalhe",
-    subtext: "Clínica Veterinária com Dra. Aline Belo, Banho & Tosa humanizado, Farmácia completa e Pet Delivery com conforto e segurança.",
+    badge: "🧡 Banho, tosa e consulta veterinária • Mateus Hiper Casa Forte",
+    headlineLine1: "Cuidado, Saúde e Amor para o Seu Pet no",
+    headlineHighlight: "Cuida Filho Pet Shop",
+    headlineLine2: "em Casa Forte",
+    subtext: "Banho, tosa humanizada, consulta veterinária e uma seleção completa de produtos de saúde, beleza e alimentação dentro do Mateus Hiper Casa Forte.",
     ctaPrimary: "Agendar Banho ou Consulta",
-    ctaSecondary: "Falar no WhatsApp",
+    ctaSecondary: "Falar com a Gente ⤵️",
     smartHomeBadge: {
-      title: "Nova Especialidade na Pet Town",
-      desc: "Acupuntura e Fisioterapia Veterinária com a Dra. Aline Belo para alívio de dores e reabilitação.",
-      price: "Agendamento Aberto"
+      title: "Cuida Filho no Mateus Hiper",
+      desc: "Estacionamento fácil, carinho de família e tudo em alimentação, estética e cuidados para seu filho.",
+      price: "Casa Forte"
     },
     bgImage: banhoTosaHero
   },
 
   // 3. MÉTRICAS E PROVA SOCIAL
   metrics: {
-    category: "AUTORIDADE VETERINÁRIA & DEDICAÇÃO",
-    leftTitle: "Por que confiar o seu melhor amigo à Pet Town?",
-    leftDesc: "Mais de 3.500 pets atendidos com carinho genuíno, equipamentos esterilizados de padrão cirúrgico, toalhas individuais seladas, produtos hipoalergênicos e equipe médica veterinária apaixonada por salvar e cuidar de vidas.",
-    rightTitle: "Equipe qualificada com centro cirúrgico e",
-    rightHighlight: "mais de 3.500 pets cuidados com muito amor",
+    category: "CUIDADO COM O SEU FILHO • MATEUS HIPER CASA FORTE",
+    leftTitle: "Por que confiar o seu melhor amigo ao Cuida Filho Pet Shop?",
+    leftDesc: "Mais de 2.800 pets cuidados com carinho genuíno. Tratamos seu pet como um filho: toalhas individuais esterilizadas em embalagem lacrada, cosméticos hipoalergênicos dermatológicos e equipe dedicada a acolher com respeito e paciência.",
+    rightTitle: "Banho, tosa e consulta veterinária com",
+    rightHighlight: "mais de 2.800 pets cuidados com muito amor",
     stats: [
-      { label: "Pets Acolhidos", val: "+3.500" },
+      { label: "Filhos Acolhidos", val: "+2.800" },
       { label: "Avaliação Google", val: "Nota 5.0" },
       { label: "Atendimento", val: "100% Humanizado" },
-      { label: "Especialidades", val: "Multidisciplinar" }
+      { label: "Localização", val: "Mateus Hiper" }
     ]
   },
 
   // 4. ETAPAS DO PROCESSO (SOLUTIONS)
   solutions: {
-    category: "O PROCESSO: COMO FUNCIONA O CUIDADO 360°",
-    title: "Experiência sem estresse, transparente e feita com carinho.",
-    trustBadge: "Protocolos rigorosos de assepsia, monitoramento contínuo e produtos dermatológicos certificados.",
+    category: "O PROCESSO: COMO CUIDAMOS DO SEU PET",
+    title: "Experiência sem estresse, transparente e feita com amor de família.",
+    trustBadge: "Protocolos rigorosos de higiene, produtos dermatológicos certificados e profissionais apaixonados por pets.",
     steps: [
       {
         number: "01",
-        title: "Agendamento Prático",
-        description: "Você escolhe o serviço pelo formulário ou WhatsApp: banho, tosa, consulta ou leva-e-traz. Confirmamos o horário ideal para você."
+        title: "Agendamento Prático no WhatsApp",
+        description: "Você fala diretamente com a gente: banho, tosa, consulta ou produtos. Reservamos o horário mais conveniente para você."
       },
       {
         number: "02",
-        title: "Acolhimento & Triagem",
-        description: "Seu pet é recebido com carinho, passa por avaliação prévia de pele, ouvidos e pelagem, garantindo cuidados sob medida."
+        title: "Acolhimento & Triagem Carinhosa",
+        description: "Seu pet é recebido com afeto e passa por uma avaliação prévia de pele, pelagem e orelhinhas para um atendimento personalizado."
       },
       {
         number: "03",
-        title: "Pet Feliz e Cheiroso",
-        description: "Procedimento realizado com paciência e zero estresse. Você recebe seu companheiro cheiroso, saudável e cheio de energia!"
+        title: "Seu Filho Feliz e Perfumado",
+        description: "Procedimento realizado com calma e zero estresse. Você recebe seu melhor amigo cheiroso, saudável e cheio de energia!"
       }
     ],
     cards: {
       card1: {
-        badge: "Cuidado e Beleza 360°",
+        badge: "Banho & Tosa com Amor",
         image: banhoTosaHero,
-        alt: "Cão recebendo banho carinhoso na Pet Town"
+        alt: "Cão feliz no Cuida Filho Pet Shop"
       },
       card2: {
-        title: "Seu pet merece viver sem dor e com mais disposição.",
-        text: "Oferecemos tratamentos de ponta em Acupuntura e Fisioterapia Veterinária com a Dra. Aline Belo para animais idosos, pós-operatório e problemas articulares.",
-        buttonText: "Conhecer a Especialidade"
+        title: "Produtos de saúde, beleza e alimentação selecionados.",
+        text: "Encontre as melhores rações Super Premium, petiscos saudáveis, suplementos, dermocosméticos e caminhas para seu filho no Mateus Hiper Casa Forte.",
+        buttonText: "Falar com a Gente no WhatsApp"
       },
       card3: {
         image: clinicaVet,
-        title: "Equipe Veterinária Qualificada",
-        price: "Consultas, vacinas e exames no mesmo lugar",
-        buttonText: "Falar com Atendimento"
+        title: "Consulta Veterinária & Saúde",
+        price: "Consultas, vacinas e cuidados preventivos",
+        buttonText: "Agendar Consulta"
       }
     }
   },
 
   // 5. PROGRAMA DE INDICAÇÃO (REFERRAL) / CLUBE DE BENEFÍCIOS
   indicouGanhou: {
-    badge: "CLUBE AMIGO PET TOWN",
-    title: "INDICOU UM AMIGO TUTOR, GANHOU DESCONTO NO PIX OU CRÉDITOS!",
-    subtitle: "Conhece alguém que ama pets tanto quanto você? Indique a Pet Town. Quando seu amigo realizar o primeiro banho ou consulta, vocês dois ganham R$ 30 em créditos ou desconto imediato!",
-    pixAmount: "R$ 30,00",
+    badge: "AMIGOS DO CUIDA FILHO",
+    title: "INDICOU UM AMIGO TUTOR, GANHOU DESCONTO NO BANHO OU COMPRAS!",
+    subtitle: "Conhece alguém em Casa Forte e região que ama pets tanto quanto você? Indique o Cuida Filho. Quando seu amigo realizar o primeiro serviço, vocês dois ganham R$ 25 em créditos ou desconto imediato!",
+    pixAmount: "R$ 25,00",
     cta: "Indicar um Amigo Tutor Agora",
     steps: [
       {
         step: "1",
         title: "Indique um Amigo",
-        desc: "Envie o contato do tutor que busca o melhor cuidado para seu cão ou gato."
+        desc: "Envie o contato do tutor que busca o melhor cuidado e produtos para seu cão ou gato."
       },
       {
         step: "2",
-        title: "O Amigo Vem à Pet Town",
-        desc: "Nossa equipe cuida do pet dele com todo amor e atenção que ele merece."
+        title: "O Amigo Vem ao Cuida Filho",
+        desc: "Nossa equipe cuida do pet dele no Mateus Hiper Casa Forte com todo amor e atenção que ele merece."
       },
       {
         step: "3",
         title: "Vocês Ganham Benefícios",
-        desc: "Crédito na hora para usar em banho, tosa, vacinas ou compras na farmácia pet!"
+        desc: "Crédito na hora para usar em banho, tosa, consulta veterinária ou na loja pet!"
       }
     ]
   },
@@ -170,46 +171,46 @@ export const PETTOWN_DATA = {
   // 6. CATÁLOGO DE 6 SERVIÇOS EM DESTAQUE (TRUSTED LOCATIONS / SERVICES)
   trustedLocations: {
     category: "SERVIÇOS & CUIDADOS EM DESTAQUE",
-    title: "Tudo o que o Seu Pet Precisa em um Só Lugar",
+    title: "Tudo o que o Seu Filho Precisa em um Só Lugar",
     viewAllText: "Ver Todos os Serviços no WhatsApp",
-    headerWhatsappMessage: "Olá Pet Town! Vim pelo site e gostaria de conhecer a tabela completa de serviços, banho & tosa e consultas veterinárias!",
-    bannerWhatsappMessage: "Olá Pet Town! Gostaria de tirar dúvidas com a equipe e agendar um horário para o meu pet.",
+    headerWhatsappMessage: "Olá Cuida Filho Pet Shop! Vim pelo site e gostaria de conhecer todos os serviços de banho, tosa e consulta veterinária!",
+    bannerWhatsappMessage: "Olá Cuida Filho Pet Shop! Gostaria de tirar dúvidas com a equipe e agendar um horário para o meu pet no Mateus Hiper Casa Forte.",
     properties: [
       {
         id: "servico-banho-tosa",
-        name: "Banho & Tosa 360°",
+        name: "Banho & Tosa com Amor",
         typology: "Estética Animal",
         subType: "Higiene & Bem-Estar",
         neighborhood: "Banho & Tosa",
-        location: "Pet Town • Banho & Tosa",
-        priceFormatted: "A partir de R$ 55,00",
-        priceValue: 55,
+        location: "Cuida Filho • Mateus Hiper Casa Forte",
+        priceFormatted: "A partir de R$ 50,00",
+        priceValue: 50,
         priceCurrency: "BRL",
         availability: "https://schema.org/InStock",
         datePosted: "2025-02-01",
         numberOfRooms: 1,
         numberOfBedrooms: 0,
         numberOfBathrooms: 1,
-        floorSizeMTK: 45, // Minutos médios de procedimento
-        geo: { latitude: -8.0476, longitude: -34.8770 },
+        floorSizeMTK: 45,
+        geo: { latitude: -8.0315, longitude: -34.9190 },
         amenities: [
-          "Água morna e toalhas individuais esterilizadas",
-          "Cosméticos hipoalergênicos dermatológicos",
+          "Água na temperatura ideal e toalhas individuais esterilizadas",
+          "Cosméticos dermatológicos e hipoalergênicos suaves",
           "Tosa higiênica, na tesoura ou padrão da raça",
-          "Corte de unhas e limpeza auricular inclusos"
+          "Corte de unhas e limpeza auricular com carinho"
         ],
         image: banhoTosaHero,
-        whatsappMessage: "Olá Pet Town! Gostaria de agendar um Banho & Tosa 360° para o meu pet. Pode me passar os horários disponíveis?",
-        description: "Serviço de banho e tosa humanizado com foco em bem-estar e zero estresse. Tratamentos de hidratação profunda e tosa da raça."
+        whatsappMessage: "Olá Cuida Filho Pet Shop! Gostaria de agendar um Banho & Tosa com Amor para o meu pet. Quais os horários disponíveis?",
+        description: "Serviço de banho e tosa humanizado com foco em bem-estar e zero estresse. Tratamentos de hidratação e tosa especializada."
       },
       {
         id: "servico-clinica-geral",
-        name: "Clínica Veterinária & Check-up",
+        name: "Consulta Veterinária & Prevenção",
         typology: "Medicina Veterinária",
         subType: "Saúde & Prevenção",
-        neighborhood: "Clínica Médica",
-        location: "Pet Town • Consultórios",
-        priceFormatted: "Consulte Valores",
+        neighborhood: "Consultório Veterinário",
+        location: "Cuida Filho • Casa Forte",
+        priceFormatted: "Consulte Horários",
         priceValue: 120,
         priceCurrency: "BRL",
         availability: "https://schema.org/InStock",
@@ -218,124 +219,124 @@ export const PETTOWN_DATA = {
         numberOfBedrooms: 1,
         numberOfBathrooms: 1,
         floorSizeMTK: 40,
-        geo: { latitude: -8.0476, longitude: -34.8770 },
+        geo: { latitude: -8.0315, longitude: -34.9190 },
         amenities: [
-          "Consultas clínicas gerais e preventivas",
-          "Vacinas importadas éticas (V8, V10, Raiva, Gripe)",
-          "Exames laboratoriais e diagnóstico rápido",
-          "Acompanhamento pediátrico e geriátrico"
+          "Consultas clínicas gerais e preventivas com atenção",
+          "Vacinas importadas éticas (V8, V10, Antirrábica, Gripe)",
+          "Avaliação de pele, pelagem e orientação nutricional",
+          "Acompanhamento cuidadoso de filhotes e pets idosos"
         ],
         image: clinicaVet,
-        whatsappMessage: "Olá Pet Town! Gostaria de agendar uma consulta veterinária / vacinação para o meu pet.",
-        description: "Equipe de médicos veterinários qualificados para cuidar da saúde integral do seu melhor amigo com exames e prevenção."
+        whatsappMessage: "Olá Cuida Filho Pet Shop! Gostaria de agendar uma consulta veterinária / vacinação para o meu pet.",
+        description: "Atendimento veterinário humanizado para cuidar da saúde integral do seu filho com foco em prevenção e qualidade de vida."
       },
       {
-        id: "servico-acupuntura-fisioterapia",
-        name: "Acupuntura e Fisioterapia Veterinária",
-        typology: "Especialidade Médica",
-        subType: "Dra. Aline Belo",
-        neighborhood: "Reabilitação",
-        location: "Pet Town • Especialidades",
-        priceFormatted: "Consulte Condições",
-        priceValue: 150,
+        id: "servico-produtos-saude-beleza",
+        name: "Produtos de Saúde, Beleza e Alimentação",
+        typology: "Boutique & Nutrição",
+        subType: "Alimentação & Cuidados",
+        neighborhood: "Loja Pet",
+        location: "Cuida Filho • Mateus Hiper Casa Forte",
+        priceFormatted: "Linha Completa",
+        priceValue: 40,
         priceCurrency: "BRL",
         availability: "https://schema.org/InStock",
         datePosted: "2025-02-10",
         numberOfRooms: 1,
         numberOfBedrooms: 0,
-        numberOfBathrooms: 1,
-        floorSizeMTK: 50,
-        geo: { latitude: -8.0476, longitude: -34.8770 },
+        numberOfBathrooms: 0,
+        floorSizeMTK: 60,
+        geo: { latitude: -8.0315, longitude: -34.9190 },
         amenities: [
-          "Dra. Aline Belo (Médica Veterinária UNINASSAU)",
-          "Pós-graduação em Acupuntura Veterinária",
-          "Alívio efetivo de dores crônicas e hérnias",
-          "Reabilitação motora e suporte a pets idosos"
+          "Rações Super Premium e opções de nutrição balanceada",
+          "Antipulgas, carrapaticidas e vermífugos originais",
+          "Shampoos, colônias suaves e dermocosméticos seguros",
+          "Brinquedos educativos, coleiras, guias e caminhas"
         ],
-        image: alineBeloAcupuntura,
-        whatsappMessage: "Olá Pet Town! Vi que vocês têm a especialidade de Acupuntura e Fisioterapia com a Dra. Aline Belo e gostaria de agendar uma avaliação para o meu pet!",
-        description: "Tratamento integrativo com Acupuntura e Fisioterapia Veterinária com a Dra. Aline Belo. Melhora expressiva na qualidade de vida e alívio de dores."
+        image: petShopFarmacia,
+        whatsappMessage: "Olá Cuida Filho Pet Shop! Gostaria de consultar a disponibilidade de rações, petiscos ou produtos de saúde para o meu pet.",
+        description: "Seleção rigorosa de marcas para nutrição, higiene e diversão do seu pet, com a comodidade do Mateus Hiper Casa Forte."
       },
       {
-        id: "servico-pet-delivery",
-        name: "Pet Delivery • Leva e Traz",
-        typology: "Logística Conforto",
-        subType: "Transporte Seguro",
-        neighborhood: "Táxi Dog",
-        location: "Em domicílio na sua região",
-        priceFormatted: "Consulte sua Região",
-        priceValue: 30,
+        id: "servico-cuidado-humanizado",
+        name: "Acolhimento & Cuidado com o Filho",
+        typology: "Manejo Humanizado",
+        subType: "Carinho & Paciência",
+        neighborhood: "Cuidado Especial",
+        location: "Cuida Filho • Casa Forte",
+        priceFormatted: "Atendimento com Amor",
+        priceValue: 60,
         priceCurrency: "BRL",
         availability: "https://schema.org/InStock",
         datePosted: "2025-02-15",
         numberOfRooms: 1,
         numberOfBedrooms: 0,
-        numberOfBathrooms: 0,
-        floorSizeMTK: 30,
-        geo: { latitude: -8.0476, longitude: -34.8770 },
+        numberOfBathrooms: 1,
+        floorSizeMTK: 50,
+        geo: { latitude: -8.0315, longitude: -34.9190 },
         amenities: [
-          "Veículo climatizado e higienizado a cada viagem",
-          "Caixas individuais confortáveis e seguras",
-          "Motoristas treinados no manejo cuidadoso",
-          "Pontualidade e tranquilidade para o tutor"
+          "Ambiente calmo e acolhedor para pets sensíveis",
+          "Equipe paciente e treinada em manejo positivo",
+          "Estacionamento seguro dentro do Mateus Hiper",
+          "Comunicação direta com o tutor via WhatsApp"
         ],
-        image: petDelivery,
-        whatsappMessage: "Olá Pet Town! Gostaria de solicitar o serviço de Pet Delivery (Leva e Traz) para o meu pet. Como funciona para o meu endereço?",
-        description: "Serviço de Táxi Dog climatizado para buscar e levar seu pet em segurança e sem estresse para banho, tosa ou consultas."
+        image: alineBeloAcupuntura,
+        whatsappMessage: "Olá Cuida Filho Pet Shop! Meu pet é um pouco sensível e gostaria de agendar um atendimento calmo e cuidadoso para ele.",
+        description: "Cada pet é tratado como único. Priorizamos a calma, o respeito ao tempo do animal e a tranquilidade da família tutora."
       },
       {
-        id: "servico-pet-shop-farmacia",
-        name: "Farmácia Veterinária & Pet Boutique",
-        typology: "Medicamentos & Loja",
-        subType: "Produtos Selecionados",
-        neighborhood: "Farmácia Pet",
-        location: "Pet Town • Loja Física e Online",
-        priceFormatted: "Preços Competitivos",
-        priceValue: 40,
+        id: "servico-cuidado-felino",
+        name: "Cuidado Felino & Estética Delicada",
+        typology: "Gatos & Felinos",
+        subType: "Manejo Suave Felino",
+        neighborhood: "Espaço Tranquilo",
+        location: "Cuida Filho • Casa Forte",
+        priceFormatted: "Consulte Condições",
+        priceValue: 55,
         priceCurrency: "BRL",
         availability: "https://schema.org/InStock",
         datePosted: "2025-02-20",
         numberOfRooms: 1,
         numberOfBedrooms: 0,
         numberOfBathrooms: 0,
-        floorSizeMTK: 60,
-        geo: { latitude: -8.0476, longitude: -34.8770 },
+        floorSizeMTK: 40,
+        geo: { latitude: -8.0315, longitude: -34.9190 },
         amenities: [
-          "Medicamentos éticos veterinários sob prescrição",
-          "Antipulgas, carrapaticidas e vermífugos originais",
-          "Rações Super Premium e dietas coadjuvantes",
-          "Acessórios, caminhas e brinquedos educativos"
+          "Banho adaptado e tosa higiênica específica para gatos",
+          "Manejo calmo e sem movimentos bruscos",
+          "Produtos sem odores fortes que causem incômodo ao felino",
+          "Corte de unhas seguro com contenção suave"
         ],
-        image: petShopFarmacia,
-        whatsappMessage: "Olá Pet Town! Gostaria de consultar a disponibilidade de medicamentos / rações na farmácia veterinária.",
-        description: "Farmácia completa com medicamentos, suplementos, rações premium e consultoria farmacêutica para tirar dúvidas de dosagem."
+        image: petDelivery,
+        whatsappMessage: "Olá Cuida Filho Pet Shop! Gostaria de agendar cuidados de higiene para o meu gatinho.",
+        description: "Atenção redobrada para os felinos, respeitando seus limites e oferecendo um atendimento delicado e sem estresse."
       },
       {
-        id: "servico-daycare-hotelzinho",
-        name: "Day Care & Recreação Assistida",
-        typology: "Socialização & Hotel",
-        subType: "Recreação & Hospedagem",
-        neighborhood: "Hotelzinho Pet",
-        location: "Pet Town • Área Recreativa",
-        priceFormatted: "Diárias sob Consulta",
-        priceValue: 70,
+        id: "servico-estetica-canina",
+        name: "Estética Canina & Bem-Estar",
+        typology: "Spa & Hidratação",
+        subType: "Pelagens Especiais",
+        neighborhood: "Estética Canina",
+        location: "Cuida Filho • Mateus Hiper",
+        priceFormatted: "Consulte Valores",
+        priceValue: 65,
         priceCurrency: "BRL",
         availability: "https://schema.org/InStock",
         datePosted: "2025-02-25",
-        numberOfRooms: 3,
-        numberOfBedrooms: 2,
-        numberOfBathrooms: 2,
-        floorSizeMTK: 120,
-        geo: { latitude: -8.0476, longitude: -34.8770 },
+        numberOfRooms: 2,
+        numberOfBedrooms: 1,
+        numberOfBathrooms: 1,
+        floorSizeMTK: 60,
+        geo: { latitude: -8.0315, longitude: -34.9190 },
         amenities: [
-          "Socialização guiada por especialistas em comportamento",
-          "Área de gramado seguro com enriquecimento ambiental",
-          "Monitoramento veterinário e envio de fotos no WhatsApp",
-          "Ambiente climatizado para soneca e relaxamento"
+          "Hidratação profunda para brilho e maciez da pelagem",
+          "Desembolo seguro com produtos desembaraçantes suaves",
+          "Perfumes suaves hipoalergênicos e finalização caprichada",
+          "Seu cãozinho sai radiante, macio e protegido"
         ],
         image: daycareHotelzinho,
-        whatsappMessage: "Olá Pet Town! Gostaria de saber como funciona o Day Care / Hotelzinho e quais são as vacinas necessárias para matrícula!",
-        description: "Espaço de recreação e hotelzinho para cães gastarem energia de forma saudável, com segurança e supervisão carinhosa."
+        whatsappMessage: "Olá Cuida Filho Pet Shop! Gostaria de saber sobre os pacotes de hidratação e estética canina para o meu cãozinho!",
+        description: "Tratamentos especiais para realçar a beleza da pelagem do seu cão com produtos nutritivos e toque aveludado."
       }
     ]
   },
@@ -343,27 +344,27 @@ export const PETTOWN_DATA = {
   // 7. DEPOIMENTOS DE TUTORES REAIS
   testimonials: [
     {
-      name: "Mariana Costa (Tutora do Thor)",
-      location: "Recife - PE",
+      name: "Mariana Costa (Tutora do Bento)",
+      location: "Casa Forte • Recife - PE",
       tag: "Tutor Apaixonado • Banho & Tosa",
       stars: 5,
-      text: "O Thor é um Golden que costumava ficar apavorado para tomar banho em outros pet shops. Na Pet Town a equipe teve uma paciência infinita, ele voltou calmo, cheiroso e feliz da vida. Não troco por nada!",
+      text: "O Bento é como um filho para mim e morria de medo de pet shop. No Cuida Filho no Mateus Hiper Casa Forte a equipe teve uma paciência maravilhosa, ele voltou calmo, cheirosíssimo e feliz da vida. Não troco por nada!",
       avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80"
     },
     {
       name: "Rodrigo Mendonça (Tutor da Mel)",
-      location: "Olinda - PE",
-      tag: "Tratamento de Sucesso • Acupuntura",
+      location: "Parnamirim • Recife - PE",
+      tag: "Cliente Frequente • Consulta & Produtos",
       stars: 5,
-      text: "A Mel já tem 11 anos e mal conseguia levantar por causa da dor na coluna. Depois que iniciou as sessões de acupuntura e fisioterapia com a Dra. Aline Belo, ela voltou a caminhar pelo jardim e pedir carinho. Um verdadeiro milagre de dedicação!",
+      text: "Excelente atendimento veterinário e a loja tem as melhores rações e medicamentos. A comodidade de estar dentro do Mateus Hiper com estacionamento fácil faz toda a diferença na nossa rotina!",
       avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80"
     },
     {
-      name: "Camila Guimarães (Tutora do Pipoca)",
-      location: "Jaboatão - PE",
-      tag: "Cliente Frequente • Pet Delivery",
+      name: "Camila Guimarães (Tutora da Amora)",
+      location: "Jaqueira • Recife - PE",
+      tag: "Cuidados Especiais • Estética & Carinho",
       stars: 5,
-      text: "A praticidade do Pet Delivery é maravilhosa! Eles buscam o Pipoca no meu condomínio com ar-condicionado e todo cuidado. Ele já entra na caixinha abanando o rabo. Recomendo de olhos fechados!",
+      text: "O carinho que eles têm com a Amora é surreal. Dá pra ver que amam de verdade o que fazem! Produtos de altíssima qualidade, toalha individual selada e o WhatsApp responde super rápido. Recomendo demais!",
       avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
     }
   ]
@@ -376,7 +377,7 @@ export const VISTAHAVEN_DATA = PETTOWN_DATA;
 export const TESTIMONIALS = PETTOWN_DATA.testimonials;
 
 /**
- * Constrói o link oficial do WhatsApp da Pet Town com mensagem pré-preenchida contextual
+ * Constrói o link oficial do WhatsApp do Cuida Filho Pet Shop com mensagem pré-preenchida
  * @param {string} [message] - Mensagem personalizada para o chat
  * @returns {string} URL pronta para abertura no WhatsApp
  */
@@ -386,3 +387,4 @@ export const getWhatsAppUrl = (message) => {
   const separator = base.includes('?') ? '&' : '?';
   return `${base}${separator}text=${encodeURIComponent(message)}`;
 };
+

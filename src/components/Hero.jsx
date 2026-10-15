@@ -35,7 +35,7 @@ export default function Hero({ onRequestFormModal }) {
 
   const whatsappHeroUrl = getWhatsAppUrl(
     PETTOWN_DATA.brand.whatsappScheduleMessage ||
-    "Olá equipe Pet Town! Vim pelo site e gostaria de agendar um horário com todo amor para o meu pet."
+    "Olá Cuida Filho Pet Shop! Vim pelo site e gostaria de agendar um horário com todo amor para o meu pet no Mateus Hiper Casa Forte."
   );
 
   return (
@@ -78,9 +78,9 @@ export default function Hero({ onRequestFormModal }) {
         )}
       >
         <div className="flex flex-col items-center justify-center text-center space-y-[1.6vh] max-w-xs sm:max-w-xl md:max-w-2xl lg:max-w-3xl w-full mx-auto my-auto">
-          {/* Logo / Emblema Oficial com anel coral/teal */}
+          {/* Logo / Emblema Oficial com anel Laranja/Amarelo-Ouro */}
           <div className="flex justify-center w-full">
-            <BrokerAvatar size="hero" badgeText="Feito com Amor" />
+            <BrokerAvatar size="hero" badgeText="Feito com Amor 🧡" />
           </div>
 
           {/* Logo e Nome Oficial */}
@@ -95,9 +95,9 @@ export default function Hero({ onRequestFormModal }) {
           {/* Título Principal de Alto Impacto */}
           <div className="space-y-[0.8vh] w-full max-w-xs sm:max-w-lg md:max-w-2xl mx-auto text-center">
             <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-[34px] font-black text-white font-heading tracking-tight leading-snug drop-shadow-2xl text-center">
-              Cuidado e Beleza 360° para o Seu Pet com{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F97316] via-[#fdba74] to-[#14B8A6]">
-                Amor e Dedicação
+              Cuidado, Saúde e Amor no{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF8C00] via-[#FFB300] to-[#FF8C00]">
+                Cuida Filho Pet Shop
               </span>
             </h1>
             <p className="text-slate-200 text-xs sm:text-sm max-w-xl mx-auto leading-relaxed font-medium drop-shadow-md hidden sm:block text-center">
@@ -109,7 +109,7 @@ export default function Hero({ onRequestFormModal }) {
           <div className="pt-[0.8vh] flex flex-row items-center justify-center gap-2 sm:gap-3.5 w-full max-w-xs sm:max-w-md mx-auto">
             <button
               onClick={onRequestFormModal}
-              className="flex-1 sm:flex-initial bg-[#F97316] hover:bg-[#EA580C] text-white font-extrabold text-[11px] sm:text-xs md:text-sm px-3 sm:px-6 py-2.5 sm:py-3 rounded-full transition-all shadow-xl shadow-[#F97316]/30 active:scale-95 hover:scale-105 cursor-pointer flex items-center justify-center gap-1.5 sm:gap-2 animate-pulseOrange whitespace-nowrap"
+              className="flex-1 sm:flex-initial bg-[#FF8C00] hover:bg-[#E67E00] text-white font-extrabold text-[11px] sm:text-xs md:text-sm px-3 sm:px-6 py-2.5 sm:py-3 rounded-full transition-all shadow-xl shadow-[#FF8C00]/30 active:scale-95 hover:scale-105 cursor-pointer flex items-center justify-center gap-1.5 sm:gap-2 animate-pulseOrange whitespace-nowrap"
             >
               <Calendar size={15} className="shrink-0" />
               <span>Agendar Banho / Consulta</span>
@@ -122,7 +122,7 @@ export default function Hero({ onRequestFormModal }) {
               className="flex-1 sm:flex-initial bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-[11px] sm:text-xs md:text-sm px-3 sm:px-6 py-2.5 sm:py-3 rounded-full transition-all shadow-lg active:scale-95 flex items-center justify-center gap-1.5 sm:gap-2 border border-emerald-400/40 whitespace-nowrap"
             >
               <MessageSquare size={15} className="shrink-0" />
-              <span className="whitespace-nowrap">Falar no WhatsApp</span>
+              <span className="whitespace-nowrap">Fale com a gente ⤵️</span>
             </a>
           </div>
         </div>
@@ -139,18 +139,18 @@ export default function Hero({ onRequestFormModal }) {
       >
         <div className="space-y-4 sm:space-y-6 max-w-3xl px-4 py-6 sm:p-0 rounded-3xl sm:rounded-none bg-black/40 sm:bg-transparent backdrop-blur-[2px] sm:backdrop-blur-none border border-white/10 sm:border-none shadow-2xl sm:shadow-none">
           {/* Badge Superior */}
-          <div className="inline-flex items-center gap-2 bg-[#101C30]/80 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/10 text-xs font-bold text-white shadow-lg">
-            <Heart size={14} className="text-[#F97316] fill-[#F97316]" />
-            <span>Feito por quem cuida com amor • Cuidado e Beleza 360°</span>
+          <div className="inline-flex items-center gap-2 bg-[#4A2C11]/85 backdrop-blur-md px-4 py-1.5 rounded-full border border-[#FF8C00]/30 text-xs font-bold text-white shadow-lg">
+            <Heart size={14} className="text-[#FF8C00] fill-[#FF8C00]" />
+            <span>{PETTOWN_DATA.brand.slogan} • Mateus Hiper Casa Forte</span>
           </div>
 
           {/* Main Headline */}
           <h1 className="text-2xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-[1.15] sm:leading-[1.1] font-heading drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)]">
-            Cuidado e Beleza 360° com{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F97316] via-[#fdba74] to-[#14B8A6]">
+            Cuidado e Saúde com{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF8C00] via-[#FFB300] to-[#FF8C00]">
               Amor e Dedicação
             </span>{' '}
-            ao Seu Pet
+            ao Seu Filho
           </h1>
 
           {/* Subtitle */}
@@ -162,7 +162,7 @@ export default function Hero({ onRequestFormModal }) {
           <div className="pt-2 flex flex-row items-center justify-center gap-2 sm:gap-3.5 w-full max-w-sm sm:max-w-none mx-auto">
             <button
               onClick={onRequestFormModal}
-              className="flex-1 sm:flex-initial bg-[#F97316] hover:bg-[#EA580C] text-white font-extrabold text-[11px] sm:text-base px-2.5 sm:px-8 py-2.5 sm:py-3.5 rounded-full transition-all shadow-xl shadow-[#F97316]/30 active:scale-95 hover:scale-105 cursor-pointer flex items-center justify-center gap-1.5 sm:gap-2.5"
+              className="flex-1 sm:flex-initial bg-[#FF8C00] hover:bg-[#E67E00] text-white font-extrabold text-[11px] sm:text-base px-2.5 sm:px-8 py-2.5 sm:py-3.5 rounded-full transition-all shadow-xl shadow-[#FF8C00]/30 active:scale-95 hover:scale-105 cursor-pointer flex items-center justify-center gap-1.5 sm:gap-2.5"
             >
               <Calendar size={16} className="shrink-0" />
               <span className="hidden sm:inline">Agendar Banho ou Consulta</span>
@@ -176,20 +176,20 @@ export default function Hero({ onRequestFormModal }) {
               className="flex-1 sm:flex-initial bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-[11px] sm:text-base px-2.5 sm:px-6 py-2.5 sm:py-3.5 rounded-full transition-all shadow-lg active:scale-95 flex items-center justify-center gap-1.5 sm:gap-2"
             >
               <MessageSquare size={16} className="shrink-0" />
-              <span className="whitespace-nowrap">Falar no WhatsApp</span>
+              <span className="whitespace-nowrap">Fale com a gente ⤵️</span>
             </a>
           </div>
 
           {/* Badges de Autoridade */}
           <div className="pt-4 flex flex-wrap items-center justify-center gap-4 text-xs font-semibold text-slate-300">
-            <span className="flex items-center gap-1.5 bg-[#101C30]/80 px-3.5 py-1.5 rounded-full border border-white/10 shadow-md">
-              <Stethoscope size={14} className="text-[#14B8A6]" /> Equipe Veterinária Qualificada
+            <span className="flex items-center gap-1.5 bg-[#4A2C11]/85 px-3.5 py-1.5 rounded-full border border-[#FF8C00]/20 shadow-md">
+              <Stethoscope size={14} className="text-[#FFB300]" /> Banho, Tosa & Consulta Veterinária
             </span>
-            <span className="flex items-center gap-1.5 bg-[#101C30]/80 px-3.5 py-1.5 rounded-full border border-white/10 shadow-md">
-              <Sparkles size={14} className="text-[#F97316]" /> Dra. Aline Belo • Acupuntura & Fisio
+            <span className="flex items-center gap-1.5 bg-[#4A2C11]/85 px-3.5 py-1.5 rounded-full border border-[#FF8C00]/20 shadow-md">
+              <Sparkles size={14} className="text-[#FF8C00]" /> Produtos de Saúde, Beleza e Alimentação
             </span>
-            <span className="flex items-center gap-1.5 bg-[#101C30]/80 px-3.5 py-1.5 rounded-full border border-white/10 shadow-md">
-              <ShieldCheck size={14} className="text-[#25D366]" /> Pet Delivery Seguro & Confortável
+            <span className="flex items-center gap-1.5 bg-[#4A2C11]/85 px-3.5 py-1.5 rounded-full border border-[#FF8C00]/20 shadow-md">
+              <ShieldCheck size={14} className="text-[#25D366]" /> Mateus Hiper Casa Forte
             </span>
           </div>
         </div>
@@ -204,10 +204,10 @@ export default function Hero({ onRequestFormModal }) {
       >
         <div
           onClick={handleScrollDown}
-          className="w-10 h-10 rounded-full bg-[#101C30]/90 hover:bg-[#F97316] border border-[#F97316]/40 flex items-center justify-center text-white cursor-pointer transition-all hover:scale-110 shadow-lg animate-bounceSlow"
+          className="w-10 h-10 rounded-full bg-[#4A2C11]/90 hover:bg-[#FF8C00] border border-[#FF8C00]/40 flex items-center justify-center text-white cursor-pointer transition-all hover:scale-110 shadow-lg animate-bounceSlow"
           title="Rolar para baixo"
         >
-          <ArrowDown size={15} className="text-[#F97316] hover:text-white" />
+          <ArrowDown size={15} className="text-[#FF8C00] hover:text-white" />
         </div>
       </div>
     </section>

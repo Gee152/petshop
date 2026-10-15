@@ -8,29 +8,30 @@ interface Props {
 }
 
 const {
-  title = "Pet Town | Pet Shop e Clínica Veterinária • Cuidado e Beleza 360°",
-  description = "Feito por quem cuida com amor! Clínica Veterinária, Dra. Aline Belo (Acupuntura e Fisioterapia Veterinária), Banho & Tosa 360°, Farmácia e Pet Delivery."
+  title = "Cuida Filho Pet Shop | Banho, Tosa, Consulta Veterinária e Produtos Pet • Casa Forte",
+  description = "Cuida Filho Pet Shop no Mateus Hiper Casa Forte. Banho & Tosa humanizado, Consulta Veterinária, Produtos de Saúde, Beleza e Alimentação com muito amor e carinho."
 } = Astro.props;
 
 const veterinarySchema = {
   "@context": "https://schema.org",
   "@type": "VeterinaryCare",
   "name": PETTOWN_DATA.brand.fullName,
-  "alternateName": "Pet Town",
+  "alternateName": "Cuida Filho Pet Shop",
   "description": PETTOWN_DATA.brand.bio,
-  "telephone": "+55-81-99999-9999",
+  "telephone": "+55-81-99184-1337",
   "priceRange": "$$",
-  "openingHours": "Mo-Fr 08:00-18:00, Sa 08:00-14:00",
+  "openingHours": "Mo-Fr 08:00-19:00, Sa 08:00-16:00",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "Mateus Hiper Casa Forte",
     "addressLocality": "Recife",
     "addressRegion": "PE",
     "addressCountry": "BR"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": -8.0476,
-    "longitude": -34.8770
+    "latitude": -8.0347,
+    "longitude": -34.9190
   }
 };
 ---
@@ -43,10 +44,10 @@ const veterinarySchema = {
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="keywords" content="pet shop recife, clinica veterinaria recife, banho e tosa recife, acupuntura veterinaria aline belo, pet delivery leva e traz" />
-    <meta name="author" content="Pet Town Pet Shop e Clínica Veterinária" />
+    <meta name="keywords" content="cuida filho pet shop, pet shop casa forte recife, banho e tosa casa forte, consulta veterinaria mateus hiper, racoes medicamentos recife" />
+    <meta name="author" content="Cuida Filho Pet Shop" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://pettown.com.br/" />
+    <link rel="canonical" href="https://cuidafilhopetshop.com.br/" />
 
     <!-- OpenGraph / Facebook / WhatsApp Preview -->
     <meta property="og:title" content={title} />
@@ -57,12 +58,12 @@ const veterinarySchema = {
     <!-- Schema.org JSON-LD para Google Rich Snippets (VeterinaryCare) -->
     <script type="application/ld+json" set:html={JSON.stringify(veterinarySchema)} />
 
-    <!-- Google Fonts Preconnect & Typography -->
+    <!-- Google Fonts Preconnect & Typography (Fredoka, Baloo 2, Nunito, Quicksand) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Fredoka:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
   </head>
-  <body class="bg-[#F8FAFC] text-slate-900 antialiased font-sans selection:bg-[#F97316] selection:text-white overflow-x-hidden">
+  <body class="bg-[#FFFDF7] text-[#4A2C11] antialiased font-sans selection:bg-[#FF8C00] selection:text-white overflow-x-hidden">
     <slot />
 
     <!-- Inicializador Universal de Scroll Reveal (Zero Dependências) -->

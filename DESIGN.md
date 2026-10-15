@@ -1,24 +1,23 @@
 ---
-version: 2.0.0
-name: Pet Town - Pet Shop e Clínica Veterinária
-description: Design system e tokens visuais para a landing page de alta conversão e hub BioLinks do Pet Town
+version: 2.1.0
+name: Cuida Filho Pet Shop
+description: Design system e tokens visuais para a landing page de alta conversão e hub BioLinks do Cuida Filho Pet Shop
 colors:
-  primary: "#F97316"          # Laranja vibrante do logo e destaques
-  primary-hover: "#EA580C"    # Laranja escuro no hover
-  teal: "#14B8A6"             # Verde água / Turquesa da pata e clínica
-  teal-dark: "#0D9488"        # Tom escuro de teal para textos legíveis
-  secondary: "#101C30"        # Azul marinho institucional para solidez e autoridade
-  secondary-dark: "#0A1220"   # Fundo escuro profundo para sticky scroll e dark mode
-  bg-light: "#F8FAFC"         # Fundo clean moderno quase branco
-  bg-white: "#FFFFFF"         # Branco puro para cards e modais
-  border-subtle: "#E2E8F0"    # Delimitação neutra com leve transparência
-  text-primary: "#0F172A"     # Texto principal em ardósia escura de altíssima legibilidade
-  text-secondary: "#64748B"   # Texto de apoio e descrições
+  primary: "#FF8C00"          # Laranja vibrante principal da marca
+  primary-hover: "#E67A00"    # Laranja escuro no hover
+  gold: "#FFB300"             # Amarelo-Ouro para destaques e estrelas
+  secondary: "#4A2C11"        # Marrom escuro/chocolate para textos, botões e rodapé
+  secondary-dark: "#38200C"   # Chocolate profundo para fundos escuros de autoridade
+  chocolate-warm: "#6B3E2E"   # Marrom quente para contrastes e subtítulos
+  bg-surface: "#FFFFFF"       # Branco puro para cards e áreas de leitura
+  bg-clean: "#FFFDF7"         # Creme / Off-White suave de fundo
+  border-subtle: "#F3E8DC"    # Borda delicada em tom creme aquecido
+  text-primary: "#4A2C11"     # Texto principal em marrom escuro (máxima legibilidade)
+  text-secondary: "#6B3E2E"   # Texto de apoio e descrições
   accent-whatsapp: "#25D366"  # Verde oficial do WhatsApp
-  accent-success: "#10B981"   # Verde de aprovação e benefícios
 typography:
-  font-heading: "'Montserrat', 'Poppins', 'Outfit', sans-serif"
-  font-body: "'Inter', 'Plus Jakarta Sans', sans-serif"
+  font-heading: "'Fredoka', 'Baloo 2', 'Chewy', sans-serif"
+  font-body: "'Nunito', 'Quicksand', sans-serif"
 rounded:
   sm: "8px"
   md: "14px"
@@ -27,15 +26,18 @@ rounded:
   full: "9999px"
 ---
 
-# Pet Town | Pet Shop e Clínica Veterinária
+# Cuida Filho Pet Shop
 
 ## Identidade da Marca
-- **Slogan**: "Feito por quem cuida com amor!"
-- **Proposta de Valor**: "Cuidado e Beleza 360° para o seu pet, da clínica especializada com Dra. Aline Belo ao banho & tosa carinhoso e pet delivery com conforto."
-- **Atributos Emocionais**: Amor genuíno aos animais, autoridade clínica médica, carinho, higiene hospitalar e agilidade no atendimento.
+- **Nome Oficial:** Cuida Filho Pet Shop
+- **Localização:** Mateus Hiper Casa Forte — Recife / PE
+- **WhatsApp:** (81) 99184-1337 (`https://api.whatsapp.com/send?phone=5581991841337`)
+- **Pilares Principais:**
+  - 🧡 Banho, tosa e consulta veterinária
+  - 🧡 Produtos de saúde, beleza e alimentação
+- **Atributos Emocionais:** Carinho com "filho de quatro patas", acolhimento, dedicação, ambiente seguro e atendimento humanizado.
 
 ## Paleta de Cores Funcionais
-1. **Laranja Pet Town (`#F97316` / `#F28C0F`)**: Energia, entusiasmo e calor humano. Aplicado em botões principais de ação (CTAs), badges de destaque e no emblema da marca.
-2. **Turquesa / Teal Clínico (`#14B8A6` / `#0D9488`)**: Saúde, assepsia, modernidade veterinária e equilíbrio. Presente na pata do logo, nas badges de especialidade médica e checkmarks.
-3. **Azul Marinho Noturno (`#101C30` / `#0A1220`)**: Confiança técnica, credibilidade médica veterinária, fundos de seções de autoridade (Sticky Scroll) e rodapé.
-4. **Branco & Slate Light (`#FFFFFF` / `#F8FAFC`)**: Sensação de higiene impecável, organização e fácil leitura para tutores de todas as idades.
+1. **Laranja Vibrante (`#FF8C00`) & Amarelo-Ouro (`#FFB300`):** Energia, calor, amor e alegria nos botões de ação (CTAs), badges e degradês.
+2. **Marrom Escuro / Chocolate (`#4A2C11` & `#6B3E2E`):** Sofisticação amigável, contraste perfeito e autoridade em textos, menus e rodapé (substituindo o preto tradicional).
+3. **Branco (`#FFFFFF`) & Creme / Off-White (`#FFFDF7`):** Higiene impecável, leveza e conforto visual na leitura.

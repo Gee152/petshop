@@ -22,7 +22,7 @@ export default function FloatingWhatsApp() {
     };
   }, []);
 
-  const defaultMessage = "Olá equipe Pet Town! Estou navegando no site e gostaria de tirar dúvidas e agendar um atendimento para o meu pet.";
+  const defaultMessage = "Olá equipe Cuida Filho! Estou navegando no site e gostaria de tirar dúvidas e agendar um atendimento para o meu pet no Mateus Hiper Casa Forte.";
   const whatsappUrl = getWhatsAppUrl(defaultMessage);
 
   const handleClick = () => {
@@ -41,14 +41,14 @@ export default function FloatingWhatsApp() {
 
   return (
     <aside
-      aria-label="Contato via WhatsApp Pet Town"
+      aria-label="Contato via WhatsApp Cuida Filho Pet Shop"
       className={`fixed z-40 right-3 sm:right-6 top-[65%] -translate-y-1/2 flex items-center gap-3 transition-all duration-500 ${
         isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12 pointer-events-none'
       }`}
     >
       {/* Balão de Dica / Speech Bubble (Desktop) */}
       <div
-        className={`hidden sm:flex items-center gap-2.5 bg-[#101C30]/95 text-white pl-3.5 pr-2 py-2 rounded-2xl shadow-2xl border border-[#F97316]/40 backdrop-blur-md transition-all duration-300 select-none ${
+        className={`hidden sm:flex items-center gap-2.5 bg-[#4A2C11]/95 text-white pl-3.5 pr-2 py-2 rounded-2xl shadow-2xl border border-[#FF8C00]/40 backdrop-blur-md transition-all duration-300 select-none ${
           showTooltip ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-3 pointer-events-none'
         }`}
       >
@@ -59,18 +59,18 @@ export default function FloatingWhatsApp() {
           onClick={handleClick}
           className="flex flex-col text-left group"
         >
-          <span className="text-[10px] text-[#14B8A6] font-extrabold uppercase tracking-wider flex items-center gap-1.5">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#14B8A6] animate-pulse"></span>
-            Online Agora • Feito com Amor
+          <span className="text-[10px] text-[#FFB300] font-extrabold uppercase tracking-wider flex items-center gap-1.5">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#FF8C00] animate-pulse"></span>
+            Online Agora • Mateus Hiper
           </span>
-          <span className="text-xs font-bold text-slate-100 group-hover:text-[#F97316] transition-colors">
-            Falar com a Pet Town no WhatsApp
+          <span className="text-xs font-bold text-amber-50 group-hover:text-[#FF8C00] transition-colors">
+            Fale com a gente ⤵️
           </span>
         </a>
         <button
           type="button"
           onClick={() => setShowTooltip(false)}
-          className="text-slate-400 hover:text-white text-base leading-none p-1 cursor-pointer transition-colors"
+          className="text-amber-200/60 hover:text-white text-base leading-none p-1 cursor-pointer transition-colors"
           title="Fechar mensagem"
           aria-label="Fechar mensagem"
         >
@@ -84,8 +84,8 @@ export default function FloatingWhatsApp() {
         target="_blank"
         rel="noopener noreferrer"
         onClick={handleClick}
-        aria-label="Falar com a Pet Town no WhatsApp"
-        title="Falar com a Pet Town"
+        aria-label="Falar com o Cuida Filho no WhatsApp"
+        title="Fale com a gente no WhatsApp"
         className="relative group flex items-center justify-center w-14 h-14 sm:w-15 sm:h-15 rounded-full bg-gradient-to-tr from-[#128C7E] via-[#25D366] to-[#25D366] text-white shadow-2xl shadow-emerald-950/40 hover:shadow-emerald-500/50 hover:scale-110 active:scale-95 transition-all duration-300 cursor-pointer border border-white/30"
       >
         {/* Efeito Radar */}

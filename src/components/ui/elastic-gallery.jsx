@@ -1,53 +1,53 @@
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
-import rawBanhoTosaHero from "../../img/banho_tosa_hero.jpg";
-import rawClinicaVet from "../../img/clinica_veterinaria.png";
-import rawAlineBeloAcupuntura from "../../img/aline_belo_acupuntura.png";
-import rawPetShopFarmacia from "../../img/pet_shop_farmacia.jpg";
-import rawPetDelivery from "../../img/pet_delivery.jpg";
+import rawCao from "../../img/cao.png";
+import rawGato from "../../img/gato.png";
+import rawCuidandoDoPet from "../../img/cuidandodopet.png";
+import rawProduto1 from "../../img/produto1.png";
+import rawCao2 from "../../img/cao2.png";
 import { getImgSrc } from "@/utils/imageUtils";
 
-const banhoTosaHero = getImgSrc(rawBanhoTosaHero);
-const clinicaVet = getImgSrc(rawClinicaVet);
-const alineBeloAcupuntura = getImgSrc(rawAlineBeloAcupuntura);
-const petShopFarmacia = getImgSrc(rawPetShopFarmacia);
-const petDelivery = getImgSrc(rawPetDelivery);
+const imgCao = getImgSrc(rawCao);
+const imgGato = getImgSrc(rawGato);
+const imgCuidandoDoPet = getImgSrc(rawCuidandoDoPet);
+const imgProduto1 = getImgSrc(rawProduto1);
+const imgCao2 = getImgSrc(rawCao2);
 
 const DEFAULT_PET_ITEMS = [
   {
     id: "01",
-    title: "Banho & Tosa 360°",
-    category: "Cuidado e Beleza",
-    src: banhoTosaHero,
-    alt: "Banho e tosa humanizado na Pet Town",
+    title: "Banho & Tosa com Amor",
+    category: "Cuidado e Estética",
+    src: imgCao,
+    alt: "Banho e tosa humanizado no Cuida Filho Pet Shop",
   },
   {
     id: "02",
-    title: "Clínica Veterinária",
-    category: "Equipe Qualificada",
-    src: clinicaVet,
+    title: "Consulta Veterinária",
+    category: "Saúde e Prevenção",
+    src: imgGato,
     alt: "Consulta veterinária e exames preventivos",
   },
   {
     id: "03",
-    title: "Acupuntura & Fisio",
-    category: "Dra. Aline Belo",
-    src: alineBeloAcupuntura,
-    alt: "Acupuntura e fisioterapia veterinária para alívio de dor",
+    title: "Acolhimento & Carinho",
+    category: "Manejo Humanizado",
+    src: imgCuidandoDoPet,
+    alt: "Manejo carinhoso e paciente com seu pet",
   },
   {
     id: "04",
-    title: "Pet Shop & Farmácia",
-    category: "Medicamentos e Rações",
-    src: petShopFarmacia,
-    alt: "Farmácia veterinária completa e boutique pet",
+    title: "Produtos de Saúde e Beleza",
+    category: "Nutrição e Farmácia",
+    src: imgProduto1,
+    alt: "Rações selecionadas, cosméticos e farmácia pet",
   },
   {
     id: "05",
-    title: "Pet Delivery",
-    category: "Leva e Traz Climatizado",
-    src: petDelivery,
-    alt: "Transporte seguro e com conforto para seu pet",
+    title: "Estética e Bem-Estar",
+    category: "Pelagens Especiais",
+    src: imgCao2,
+    alt: "Tratamento de beleza e bem-estar animal",
   },
 ];
 
@@ -58,7 +58,7 @@ export function ElasticGallery({
   defaultActiveId,
   onItemClick,
 }) {
-  // Ao carregar a tela, abre automaticamente a imagem do meio (Acupuntura ou Clínica)
+  // Ao carregar a tela, abre automaticamente a imagem do meio
   const middleIndex = Math.floor(items.length / 2);
   const initialActiveId = defaultActiveId || items[middleIndex]?.id || "03";
   const [activeId, setActiveId] = useState(initialActiveId);
@@ -103,7 +103,7 @@ export function ElasticGallery({
                 activeId === item.id ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               )}
             >
-              <span className="text-[10px] font-bold text-[#F97316] uppercase tracking-widest block mb-1">
+              <span className="text-[10px] font-bold text-[#FF8C00] uppercase tracking-widest block mb-1">
                 {item.category}
               </span>
               <h3 className="text-sm sm:text-base font-extrabold text-white font-heading">
@@ -127,7 +127,7 @@ export function ElasticGallery({
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
             <div>
-              <span className="text-xs font-bold text-[#F97316] block">{item.category}</span>
+              <span className="text-xs font-bold text-[#FF8C00] block">{item.category}</span>
               <h4 className="text-sm font-bold text-white">{item.title}</h4>
             </div>
           </div>
@@ -138,3 +138,4 @@ export function ElasticGallery({
 }
 
 export default ElasticGallery;
+

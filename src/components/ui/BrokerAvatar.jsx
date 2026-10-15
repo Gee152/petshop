@@ -1,18 +1,18 @@
 import React from "react";
 import { Heart, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
-import logoImg from "@/img/logo_pet_town.png";
+import logoImg from "@/img/cuidafilhopetshoplogo.jpg";
 import { PETTOWN_DATA } from "@/data/propertyData";
 import { getImgSrc } from "@/utils/imageUtils";
 
 /**
- * BrokerAvatar / PetTownAvatar - Emblema circular com anel coral/teal da marca
- * e badge de autoridade médica e carinho.
+ * BrokerAvatar / PetTownAvatar - Emblema circular com anel Laranja/Amarelo-Ouro da marca
+ * e badge de amor ao pet.
  */
 export default function BrokerAvatar({
   size = "hero", // "hero" | "bio" | "md" | "sm"
   showBadge = true,
-  badgeText = "Feito com Amor",
+  badgeText = "Feito com Amor 🧡",
   src = logoImg,
   alt = PETTOWN_DATA.brand.photoAlt,
   className = "",
@@ -46,20 +46,20 @@ export default function BrokerAvatar({
 
   return (
     <div className={cn("relative group transition-transform duration-500 hover:scale-105 inline-block select-none", className)}>
-      {/* Moldura Circular com Borda Degradê Laranja & Turquesa (#F97316 via-white to-#14B8A6) */}
+      {/* Moldura Circular com Borda Degradê Laranja Vibrante & Amarelo-Ouro (#FF8C00 via-#FFB300 to-#6B3E2E) */}
       <div
         className={cn(
-          "rounded-full bg-gradient-to-tr from-[#F97316] via-white to-[#14B8A6] shadow-[0_20px_50px_rgba(0,0,0,0.85),0_0_35px_rgba(249,115,22,0.35)] ring-2 ring-white/40",
+          "rounded-full bg-gradient-to-tr from-[#FF8C00] via-[#FFB300] to-[#6B3E2E] shadow-[0_20px_50px_rgba(74,44,17,0.45),0_0_35px_rgba(255,140,0,0.35)] ring-2 ring-white/40",
           currentSize.avatarClass
         )}
       >
         <div className="relative w-full h-full rounded-full overflow-hidden bg-white flex items-center justify-center p-2">
-          {/* Logo Original Nítido com Símbolos Pet */}
+          {/* Logo Cuida Filho Pet Shop */}
           <img
             src={imgSrc}
             alt={alt}
             className={cn(
-              "w-full h-full object-contain transition-transform duration-500 group-hover:scale-110",
+              "w-full h-full object-cover transition-transform duration-500 group-hover:scale-110",
               imgClassName
             )}
           />
@@ -70,14 +70,15 @@ export default function BrokerAvatar({
       {showBadge && (
         <div
           className={cn(
-            "absolute left-1/2 -translate-x-1/2 bg-[#101C30] text-[#F97316] font-black rounded-full shadow-2xl shadow-black/80 whitespace-nowrap uppercase tracking-wider flex items-center gap-1.5 border-2 border-[#14B8A6] z-10",
+            "absolute left-1/2 -translate-x-1/2 bg-[#4A2C11] text-[#FFB300] font-black rounded-full shadow-2xl shadow-black/60 whitespace-nowrap uppercase tracking-wider flex items-center gap-1.5 border-2 border-[#FF8C00] z-10",
             currentSize.badgeClass
           )}
         >
-          <Heart size={currentSize.iconSize} className="text-[#F97316] fill-[#F97316]" />
+          <Heart size={currentSize.iconSize} className="text-[#FF8C00] fill-[#FF8C00]" />
           <span>{badgeText}</span>
         </div>
       )}
     </div>
   );
 }
+

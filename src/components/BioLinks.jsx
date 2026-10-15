@@ -118,39 +118,39 @@ export default function BioLinks() {
   const links = [
     {
       id: "whatsapp-banho",
-      name: "Agendar Banho & Tosa",
-      actionText: "Cuidado e Beleza 360° com produtos dermatológicos",
+      name: "Agendar Banho & Tosa com Amor",
+      actionText: "Cuidado e banho humanizado com produtos dermatológicos",
       badge: "Mais Procurado",
       badgeType: "orange",
       icon: Heart,
-      href: getWhatsAppUrl("Olá equipe Pet Town! Vim pelo link da bio do Instagram e gostaria de agendar um Banho & Tosa 360° para o meu pet!"),
+      href: getWhatsAppUrl("Olá equipe Cuida Filho! Vim pelo link da bio do Instagram e gostaria de agendar um Banho & Tosa para o meu pet!"),
     },
     {
       id: "catalogo-servicos",
-      name: "Catálogo de Serviços Pet Town",
-      actionText: "Conheça todos os nossos tratamentos, planos e cuidados",
+      name: "Catálogo de Serviços Cuida Filho",
+      actionText: "Banho, tosa, consulta veterinária e cuidados",
       badge: "Catálogo",
       badgeType: "orange",
       icon: Sparkles,
       onClick: () => setIsCatalogModalOpen(true),
     },
     {
-      id: "acupuntura-aline",
-      name: "Dra. Aline Belo • Acupuntura & Fisio",
-      actionText: "Alívio de dores, hérnias, artroses e reabilitação",
-      badge: "Especialidade",
-      badgeType: "teal",
+      id: "consulta-veterinaria",
+      name: "Consulta Veterinária & Check-up",
+      actionText: "Saúde, vacinas e prevenção no Mateus Hiper Casa Forte",
+      badge: "Saúde",
+      badgeType: "orange",
       icon: Stethoscope,
-      href: getWhatsAppUrl("Olá! Gostaria de agendar uma consulta com a Dra. Aline Belo de Acupuntura e Fisioterapia Veterinária!"),
+      href: getWhatsAppUrl("Olá equipe Cuida Filho! Gostaria de agendar uma consulta veterinária para o meu pet no Mateus Hiper Casa Forte!"),
     },
     {
-      id: "delivery-leva-traz",
-      name: "Pet Delivery • Leva e Traz",
-      actionText: "Buscamos e devolvemos seu pet com ar-condicionado e carinho",
-      badge: "Táxi Dog",
-      badgeType: "teal",
-      icon: Truck,
-      href: getWhatsAppUrl("Olá equipe Pet Town! Gostaria de agendar o Pet Delivery (Leva e Traz) para o meu pet!"),
+      id: "produtos-saude-alimentacao",
+      name: "Produtos de Saúde, Beleza e Alimentação",
+      actionText: "Rações Super Premium, petiscos e dermocosméticos",
+      badge: "Loja Pet",
+      badgeType: "orange",
+      icon: Sparkles,
+      href: getWhatsAppUrl("Olá equipe Cuida Filho! Gostaria de informações sobre produtos e rações na loja pet!"),
     }
   ];
 
@@ -230,7 +230,7 @@ export default function BioLinks() {
         <div className="relative w-full h-[320px] sm:h-[380px] overflow-hidden select-none shrink-0">
           <img
             src={getImgSrc(brand.storefrontPhoto || brand.bioPhoto)}
-            alt="Pet Town - Feito por quem cuida com amor!"
+            alt="Cuida Filho - Feito por quem cuida do seu filho com amor! 🧡"
             className="w-full h-full object-cover object-[center_32%]"
             fetchPriority="high"
           />
@@ -238,7 +238,7 @@ export default function BioLinks() {
           <div
             className={`absolute inset-x-0 bottom-0 h-32 sm:h-40 pointer-events-none ${!isDark
               ? "bg-gradient-to-t from-white via-white/85 to-transparent"
-              : "bg-gradient-to-t from-[#0A1220] via-[#0A1220]/85 to-transparent"
+              : "bg-gradient-to-t from-[#4A2C11] via-[#4A2C11]/85 to-transparent"
               }`}
           />
         </div>
@@ -246,7 +246,7 @@ export default function BioLinks() {
         {/* 2. CONTEÚDO PRINCIPAL */}
         <div className="relative z-10 px-4 sm:px-6 -mt-10 sm:-mt-12 pb-3 sm:pb-6 flex-1 flex flex-col justify-between">
           <div className="space-y-2.5 sm:space-y-4 my-auto">
-            {/* Bloco de Nome e Slogan com Logo Pet Town */}
+            {/* Bloco de Nome e Slogan com Logo Cuida Filho */}
             <div className="text-center space-y-1.5 sm:space-y-2 pointer-events-auto">
               <div className="flex items-center justify-center">
                 <a
@@ -270,11 +270,11 @@ export default function BioLinks() {
                   href={brand.instagram}
                   target="_blank"
                   rel="noreferrer"
-                  title="Instagram da Pet Town"
-                  aria-label="Instagram da Pet Town"
+                  title="Instagram do Cuida Filho"
+                  aria-label="Instagram do Cuida Filho"
                   className={`w-11 h-11 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center transition-all duration-300 group cursor-pointer shrink-0 ${!isDark
-                    ? "bg-white/95 border-2 border-slate-100 shadow-[0_6px_18px_rgba(16,28,48,0.1)] text-[#101C30] hover:text-[#F97316] hover:border-[#F97316]/40 hover:scale-105 active:scale-95"
-                    : "bg-[#101C30]/95 border border-white/10 text-[#F97316] shadow-[0_6px_18px_rgba(0,0,0,0.5)] hover:border-[#F97316]/50 hover:scale-105 active:scale-95"
+                    ? "bg-white/95 border-2 border-slate-100 shadow-[0_6px_18px_rgba(74,44,17,0.1)] text-[#4A2C11] hover:text-[#FF8C00] hover:border-[#FF8C00]/40 hover:scale-105 active:scale-95"
+                    : "bg-[#4A2C11]/95 border border-white/10 text-[#FFB300] shadow-[0_6px_18px_rgba(0,0,0,0.5)] hover:border-[#FF8C00]/50 hover:scale-105 active:scale-95"
                     }`}
                 >
                   <Instagram size={20} className="sm:w-[23px] sm:h-[23px] transition-transform group-hover:scale-110" />
@@ -282,14 +282,14 @@ export default function BioLinks() {
 
                 {/* Botão 2: WhatsApp Oficial */}
                 <a
-                  href={getWhatsAppUrl("Olá Pet Town! Vim pelo perfil do Instagram e gostaria de conversar com vocês!")}
+                  href={getWhatsAppUrl("Olá Cuida Filho! Vim pelo perfil do Instagram e gostaria de conversar com vocês!")}
                   target="_blank"
                   rel="noreferrer"
                   title="Conversar no WhatsApp"
                   aria-label="Conversar no WhatsApp"
                   className={`w-11 h-11 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center transition-all duration-300 group cursor-pointer shrink-0 ${!isDark
                     ? "bg-white/95 border-2 border-[#25D366]/40 shadow-[0_6px_18px_rgba(37,211,102,0.2)] text-[#25D366] hover:bg-[#25D366] hover:text-white hover:border-[#25D366] hover:scale-105 active:scale-95"
-                    : "bg-[#101C30]/95 border border-[#25D366]/40 text-[#25D366] shadow-[0_6px_18px_rgba(0,0,0,0.5)] hover:bg-[#25D366] hover:text-white hover:border-[#25D366] hover:scale-105 active:scale-95"
+                    : "bg-[#4A2C11]/95 border border-[#25D366]/40 text-[#25D366] shadow-[0_6px_18px_rgba(0,0,0,0.5)] hover:bg-[#25D366] hover:text-white hover:border-[#25D366] hover:scale-105 active:scale-95"
                     }`}
                 >
                   <WhatsAppIcon size={22} className="sm:w-[25px] sm:h-[25px] transition-transform group-hover:scale-110" />
@@ -300,11 +300,11 @@ export default function BioLinks() {
                   href={brand.mapsUrl}
                   target="_blank"
                   rel="noreferrer"
-                  title="Localização Pet Town"
-                  aria-label="Localização Pet Town"
+                  title="Localização Mateus Hiper Casa Forte"
+                  aria-label="Localização Mateus Hiper Casa Forte"
                   className={`w-11 h-11 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center transition-all duration-300 group cursor-pointer shrink-0 ${!isDark
-                    ? "bg-white/95 border-2 border-slate-100 shadow-[0_6px_18px_rgba(16,28,48,0.1)] text-[#101C30] hover:text-[#14B8A6] hover:border-[#14B8A6]/40 hover:scale-105 active:scale-95"
-                    : "bg-[#101C30]/95 border border-white/10 text-[#14B8A6] shadow-[0_6px_18px_rgba(0,0,0,0.5)] hover:border-[#14B8A6]/50 hover:scale-105 active:scale-95"
+                    ? "bg-white/95 border-2 border-slate-100 shadow-[0_6px_18px_rgba(74,44,17,0.1)] text-[#4A2C11] hover:text-[#FF8C00] hover:border-[#FF8C00]/40 hover:scale-105 active:scale-95"
+                    : "bg-[#4A2C11]/95 border border-white/10 text-[#FFB300] shadow-[0_6px_18px_rgba(0,0,0,0.5)] hover:border-[#FF8C00]/50 hover:scale-105 active:scale-95"
                     }`}
                 >
                   <MapPin size={20} className="sm:w-[23px] sm:h-[23px] transition-transform group-hover:scale-110" />
@@ -421,7 +421,7 @@ export default function BioLinks() {
         <div
           role="dialog"
           aria-modal="true"
-          aria-label="Catálogo de Serviços Pet Town"
+          aria-label="Catálogo de Serviços Cuida Filho"
           className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 bg-black/80 backdrop-blur-md overflow-y-auto animate-fadeIn select-none"
           onClick={(e) => {
             if (e.target === e.currentTarget) setIsCatalogModalOpen(false);
@@ -429,28 +429,28 @@ export default function BioLinks() {
         >
           <div
             className={`relative w-full max-w-md my-auto rounded-[32px] overflow-hidden shadow-2xl border flex flex-col max-h-[92vh] transition-all duration-300 ${!isDark
-              ? "bg-white border-slate-200 text-[#101C30]"
-              : "bg-[#0A1220] border-white/15 text-white"
+              ? "bg-[#FFFDF7] border-amber-900/10 text-[#4A2C11]"
+              : "bg-[#4A2C11] border-white/15 text-white"
               }`}
           >
             {/* Header do Modal com Contador e Botão Fechar */}
             <div
-              className={`p-4 sm:p-4.5 border-b flex items-center justify-between shrink-0 ${!isDark ? "border-slate-100 bg-[#F8FAFC]" : "border-white/10 bg-[#0E1828]"
+              className={`p-4 sm:p-4.5 border-b flex items-center justify-between shrink-0 ${!isDark ? "border-amber-100 bg-[#FFFDF7]" : "border-white/10 bg-[#361E0A]"
                 }`}
             >
               <div className="space-y-0.5">
-                <div className="inline-flex items-center gap-1.5 text-[#F97316] text-[10px] font-black uppercase tracking-wider font-heading">
+                <div className="inline-flex items-center gap-1.5 text-[#FF8C00] text-[10px] font-black uppercase tracking-wider font-heading">
                   <Sparkles size={11} className="shrink-0" />
-                  <span>SERVIÇOS PET TOWN</span>
+                  <span>SERVIÇOS CUIDA FILHO</span>
                 </div>
                 <h3
-                  className={`text-base sm:text-lg font-black font-heading leading-tight ${!isDark ? "text-[#101C30]" : "text-white"
+                  className={`text-base sm:text-lg font-black font-heading leading-tight ${!isDark ? "text-[#4A2C11]" : "text-white"
                     }`}
                 >
                   Catálogo de Cuidados
                 </h3>
                 <p
-                  className={`text-[11px] font-medium leading-none ${!isDark ? "text-slate-500" : "text-slate-400"
+                  className={`text-[11px] font-medium leading-none ${!isDark ? "text-[#6B3E2E]" : "text-amber-100/70"
                     }`}
                 >
                   Opção {activeSlide + 1} de {properties.length} • Deslize para navegar

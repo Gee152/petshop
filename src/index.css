@@ -1,49 +1,55 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #F97316;
-  --color-primary-hover: #EA580C;
-  --color-teal: #14B8A6;
-  --color-teal-dark: #0D9488;
-  --color-teal-light: #CCFBF1;
-  --color-secondary: #101C30;
-  --color-navy: #101C30;
-  --color-navy-dark: #0A1220;
+  --color-primary: #FF8C00;
+  --color-primary-hover: #E67A00;
+  --color-gold: #FFB300;
+  --color-gold-hover: #FFA000;
+  --color-teal: #FFB300;
+  --color-teal-dark: #D97706;
+  --color-teal-light: #FEF3C7;
+  --color-secondary: #4A2C11;
+  --color-chocolate: #4A2C11;
+  --color-chocolate-warm: #6B3E2E;
+  --color-navy: #4A2C11;
+  --color-navy-dark: #38200C;
   --color-surface: #FFFFFF;
-  --color-surface-clean: #F8FAFC;
-  --color-neutral-border: #E2E8F0;
-  --color-neutral-text: #64748B;
-  --color-orange: #F97316;
-  --color-orange-hover: #EA580C;
-  --font-heading: 'Montserrat', 'Poppins', 'Outfit', sans-serif;
-  --font-body: 'Inter', 'Plus Jakarta Sans', sans-serif;
-  --radius-card: 16px;
-  --shadow-card-soft: 0 4px 20px -2px rgba(16, 28, 48, 0.08);
+  --color-surface-clean: #FFFDF7;
+  --color-neutral-border: #F3E8DC;
+  --color-neutral-text: #6B3E2E;
+  --color-orange: #FF8C00;
+  --color-orange-hover: #E67A00;
+  --font-heading: 'Fredoka', 'Baloo 2', 'Chewy', sans-serif;
+  --font-body: 'Nunito', 'Quicksand', sans-serif;
+  --radius-card: 20px;
+  --shadow-card-soft: 0 4px 20px -2px rgba(74, 44, 17, 0.08);
 }
 
 @layer base {
   :root {
-    --font-heading: 'Montserrat', 'Poppins', 'Outfit', sans-serif;
-    --font-body: 'Inter', 'Plus Jakarta Sans', sans-serif;
+    --font-heading: 'Fredoka', 'Baloo 2', 'Chewy', sans-serif;
+    --font-body: 'Nunito', 'Quicksand', sans-serif;
 
-    /* Pet Town Design Tokens */
-    --color-primary: #F97316;
-    --color-primary-hover: #EA580C;
-    --color-teal: #14B8A6;
-    --color-teal-dark: #0D9488;
-    --color-teal-light: #CCFBF1;
-    --color-secondary: #101C30;
-    --color-navy: #101C30;
-    --color-navy-dark: #0A1220;
+    /* Cuida Filho Pet Shop Design Tokens */
+    --color-primary: #FF8C00;
+    --color-primary-hover: #E67A00;
+    --color-gold: #FFB300;
+    --color-gold-hover: #FFA000;
+    --color-teal: #FFB300;
+    --color-teal-dark: #D97706;
+    --color-teal-light: #FEF3C7;
+    --color-secondary: #4A2C11;
+    --color-chocolate: #4A2C11;
+    --color-chocolate-warm: #6B3E2E;
+    --color-navy: #4A2C11;
+    --color-navy-dark: #38200C;
     --color-surface: #FFFFFF;
-    --color-surface-clean: #F8FAFC;
-    --color-neutral-border: #E2E8F0;
-    --color-neutral-text: #64748B;
+    --color-surface-clean: #FFFDF7;
+    --color-neutral-border: #F3E8DC;
+    --color-neutral-text: #6B3E2E;
 
     /* Compatibility aliases */
-    --color-gold: #F97316;
-    --color-gold-hover: #EA580C;
-    --color-ice: #F8FAFC;
+    --color-ice: #FFFDF7;
   }
 
   html {
@@ -53,12 +59,14 @@
   body {
     font-family: var(--font-body);
     background-color: var(--color-surface-clean);
-    color: #0F172A;
+    color: #4A2C11;
     overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
+    color: #4A2C11;
+    letter-spacing: -0.01em;
   }
 }
 
@@ -140,30 +148,33 @@
 /* Classes temáticas de design tokens */
 .bg-navy-deep,
 .bg-navy {
-  background-color: #101C30;
+  background-color: #4A2C11;
 }
 
 .bg-navy-dark {
-  background-color: #0A1220;
+  background-color: #38200C;
 }
 
 .bg-brand-primary,
 .bg-brand-orange {
-  background-color: #F97316;
+  background-color: #FF8C00;
 }
 
-.bg-brand-teal {
-  background-color: #14B8A6;
+.bg-brand-teal,
+.bg-brand-gold {
+  background-color: #FFB300;
 }
 
 .text-brand-primary,
 .text-brand-orange {
-  color: #F97316;
+  color: #FF8C00;
 }
 
-.text-brand-teal {
-  color: #0D9488;
+.text-brand-teal,
+.text-brand-gold {
+  color: #D97706;
 }
+
 
 .border-brand-primary,
 .border-brand-orange {

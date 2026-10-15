@@ -13,13 +13,13 @@ export default function StructuredDataSEO() {
     const serviceListingsSchema = trustedLocations.properties.map((service) => ({
       "@context": "https://schema.org",
       "@type": "Service",
-      "name": `${service.name} • Pet Town`,
+      "name": `${service.name} • ${brand.name}`,
       "serviceType": service.typology,
       "description": service.description,
       "provider": {
         "@type": "VeterinaryCare",
         "name": brand.fullName,
-        "telephone": "+55-81-99999-9999"
+        "telephone": "+55-81-99184-1337"
       },
       "areaServed": {
         "@type": "AdministrativeArea",
@@ -34,34 +34,35 @@ export default function StructuredDataSEO() {
       }
     }));
 
-    // 2. Entidade Principal VeterinaryCare + LocalBusiness (Pet Town)
+    // 2. Entidade Principal VeterinaryCare + LocalBusiness (Cuida Filho Pet Shop)
     const veterinarySchema = {
       "@context": "https://schema.org",
       "@type": "VeterinaryCare",
-      "@id": "https://pettown.com.br/#veterinary",
+      "@id": "https://cuidafilhopetshop.com.br/#petshop",
       "name": brand.fullName,
-      "alternateName": "Pet Town",
-      "url": "https://pettown.com.br/",
-      "logo": "https://pettown.com.br/assets/logo_pet_town.png",
-      "image": "https://pettown.com.br/assets/logo_pet_town.png",
+      "alternateName": "Cuida Filho Pet Shop",
+      "url": "https://cuidafilhopetshop.com.br/",
+      "logo": "https://cuidafilhopetshop.com.br/assets/cuidafilhopetshoplogo.jpg",
+      "image": "https://cuidafilhopetshop.com.br/assets/cuidafilhopetshoplogo.jpg",
       "description": brand.bio,
-      "telephone": "+55-81-99999-9999",
+      "telephone": "+55-81-99184-1337",
       "priceRange": "$$",
-      "openingHours": "Mo-Fr 08:00-18:00, Sa 08:00-14:00",
+      "openingHours": "Mo-Sa 08:00-20:00, Su 08:00-14:00",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "Av. Dezessete de Agosto, Casa Forte (Mateus Hiper)",
         "addressLocality": "Recife",
         "addressRegion": "PE",
         "addressCountry": "BR"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": -8.0476,
-        "longitude": -34.8770
+        "latitude": -8.0315,
+        "longitude": -34.9190
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Serviços Veterinários e Estética Pet Town",
+        "name": "Serviços Cuida Filho Pet Shop",
         "itemListElement": trustedLocations.properties.map((s, idx) => ({
           "@type": "OfferCatalog",
           "name": s.name,
